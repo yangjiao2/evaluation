@@ -4,9 +4,6 @@
 
 ## Getting started
 
-Dependency:
-nvbot-utils: [https://gitlab-master.nvidia.com/jarvis-chatbot/nvbot-utils/](https://gitlab-master.nvidia.com/jarvis-chatbot/nvbot-utils/-/packages/?orderBy=created_at&sort=desc)
-always update to latest stable version!
 
 Swagger endpoint:
 
