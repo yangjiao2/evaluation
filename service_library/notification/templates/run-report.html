@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p>Hello NVBot Developers,</p>
+
+<p>You are getting this email as there has been a recent <b>{{ run_status }}</b> run
+   {% if run_info %}
+      <a class="customlink" href="{{ run_url }}">{{ run_info }}</a>
+   {% endif %}
+   for {{ project_name }}.
+</p>
+
+{% if tags %}
+<div>
+    {% for item in tags %}
+    <span class="hashtag">{{ item }}</span>
+    {% endfor %}
+</div>
+{% endif %}
+
+{% if report %}
+<div class="markdown-content">
+    {{ report|safe }}
+</div>
+{% endif %}
+
+<h4>Summary:</h4>
+
+{% for metrics_key, metrics_value in metrics.items() %}
+<h5>{{ metrics_key }}:</h5>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Category</th>
+            {% set first_item = metrics_value.values()|list|first %}
+            {% for sub_key in first_item.keys() %}
+            <th>{{ sub_key }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for category, sub_values in metrics_value.items() %}
+        <tr>
+            <td><b>{{ category }}</b></td>
+            {% for value in sub_values.values() %}
+            <td>{{ value }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endfor %}
+
+
+
+{% if details %}
+<h4>Detailed Results:</h4>
+
+{% for detail_key, detail_value in details.items() %}
+<h5>{{ detail_key }}:</h5>
+<table>
+    <thead>
+        <tr>
+            {% for header in detail_value.keys() %}
+            <th><b>{{ header }}</b></th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% set row_length = detail_value.values()|first|length %}
+        {% for i in range(row_length) %}
+        <tr>
+            {% for key in detail_value.keys() %}
+            <td>{{ detail_value[key][i] }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endfor %}
+{% endif %}
+
+{% if result_url %}
+<p>NVBot run reports can be viewed <a class="customlink" href="{{ result_url }}">here.</a></p>
+{% endif %}
+
+{% if data %}
+<h4>
+    {% if data_table_name %}
+        {{ data_table_name }}:
+    {% endif %}
+</h4>
+
+<table>
+    <thead>
+    <tr>
+        {% for header in data.keys() %}
+        <th><b>{{ header }}</b></th>
+        {% endfor %}
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        {% for row_values in data.values() %}
+        <td>{{ row_values }}</td>
+        {% endfor %}
+    </tr>
+    </tbody>
+</table>
+{% endif %}
+
+{% if data_list %}
+<table>
+    <tbody>
+        {% set row_length = data_list|first|length %}
+        {% for a_list in data_list %}
+        <tr>
+        {% for i in range(row_length) %}
+            <td>{{ a_list[i] }}</td>
+        {% endfor %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{
+	"name": "NVHELP custom evaluation alert",
+	"type": "query alert",
+	"query": "avg(last_1h):avg:eval.bleu_score_distribution.avg{bot-name:nvbot_for_nvhelp} < 2",
+	"message": "NVHelp custom evaluation \nThe Bleu score for past 1 hour is below alert threshold \n{{#is_alert}}{{/is_alert}}\n\n@aadityaramsh@nvidia.com @yangj@nvidia.com @tsalim@nvidia.com ",
+	"tags": [],
+	"options": {
+		"thresholds": {
+			"critical": 2
+		},
+		"notify_audit": false,
+		"include_tags": false
+	}
+}

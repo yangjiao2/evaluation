@@ -1,0 +1,106 @@
+{
+  "EvaluationSchema": {
+    "Notification": {
+      "EmailRecipients": [
+      ]
+    },
+    "NemoEvaluator": {
+      "DatasetConfig": {
+        "Engine": "local"
+      },
+      "Evaluators": [
+        {
+          "name": "llm_evaluation",
+          "column_map": {
+            "question": "Query",
+            "reference": "Correct Answer",
+            "answer": "Response",
+            "category": "OPTIONAL=Category",
+            "additional_params": [
+              "TO_BE_FILLED=prompt_additional_ingested_variable"
+            ]
+          },
+          "model": {
+            "llm_name": "mixtral-8x22b"
+          },
+          "evaluator_payload": {
+            "eval_type": "llm_as_a_judge",
+            "eval_subtype": "mtbench",
+            "mode": "single",
+            "judge_inference_params": {
+              "top_p": 0.1,
+              "top_k": 40,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 6000
+            },
+            "inference_params": {
+              "tokens_to_generate": 600,
+              "temperature": 0,
+              "top_k": 1,
+              "top_p": 0.75,
+              "stop": [],
+              "extra_body": {
+              }
+            }
+          },
+          "judge_config": {
+            "prompt_module": "TO_BE_FILLED=path_to_class_and_class_name",
+            "output_format": "TO_BE_FILLED=constants",
+            "template": "TO_BE_FILLED=constants",
+            "scorers": [
+              "TO_BE_FILLED=int_scores_to_be_parsed_from_LLM-as-a-judge_response"
+            ],
+            "parse_keys": [
+              "TO_BE_FILLED=explaination_to_be_parsed_from_LLM-as-a-judge_response"
+            ]
+          },
+          "run_config": {
+            "Outputs": [
+              {
+                "name": "Score",
+                "type": "Function",
+                "value": "OPTIONAL=python_to_function"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "RegressionSchema": {
+    "DatasetConfig": {
+      "Engine": "s3",
+      "Name": "TO_BE_FILLED=s3_folder_under_nvbot-evaluation",
+      "DatasetPath": "TO_BE_FILLED=dataset/file.xlsx"
+    },
+    "DataConfigs": {
+      "column_map": {
+        "question": "Query",
+        "reference": "Correct Answer",
+        "category": "Source"
+      }
+    },
+    "RunConfig": {
+      "Inputs": [
+        {
+          "name": "",
+          "type": "Attribute",
+          "value": ""
+        }
+      ],
+      "Outputs": [
+        {
+          "name": "",
+          "type": "Attribute",
+          "value": ""
+        },
+        {
+          "name": "Response",
+          "type": "Attribute",
+          "value": "TO_BE_FILLED=path_to_response"
+        }
+      ]
+    }
+  }
+}

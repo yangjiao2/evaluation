@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <p> Hello NVBot Developers, </p>
+
+    <p> You are getting this email as there has been a recent <b>{{ run_status }}</b> run {{ run_id }} for {{ project_name }}.</p>
+
+    {% if run_info %}
+        <p class="customlink"><b>{{ run_info }}</b>. Please review the reports below.</p>
+    {% endif %}
+
+    <h4>Summary:</h4>
+
+    <table>
+
+        <tr>
+
+            {% for key in metrics.keys() %}
+
+                <th><b>{{ key }}</b></th>
+
+            {% endfor %}
+
+        </tr>
+
+        <tr>
+
+
+            {% for value in metrics.values() %}
+
+                <td>{{ value }}</td>
+
+            {% endfor %}
+
+
+        </tr>
+
+    </table>
+
+   {% if details %}
+    <h4>Detailed results:</h4>
+
+    <table>
+
+        <tr>
+
+            {% for header in details.keys() %}
+
+                <th><b>{{ header }}</b></th>
+
+            {% endfor %}
+
+        </tr>
+
+        <tr>
+
+            {% for value in details.values() %}
+
+                <td>{{ value }}</td>
+
+            {% endfor %}
+
+
+        </tr>
+
+
+    </table>
+   {% endif %}
+
+
+   {% if result_url %}
+        <p>NVBot evaluation run reports can be viewed <a class="customlink" href="{{ result_url }}"> here.</a></p>
+   {% endif %}
+
+{% endblock %}

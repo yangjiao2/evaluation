@@ -1,0 +1,53 @@
+{
+	"RegressionConfig": {
+		"Notification": {
+			"EmailRecipients": [
+				"yangj@nvidia.com"
+			]
+		},
+		"DatasetConfig": {
+			"Engine": "s3",
+			"RunFile": "dataset/avc_eval_dataset.csv",
+			"DatasetPath": "dataset",
+			"RegressionPath": "regression",
+			"EvaluationPath": "evaluation"
+		},
+		"RunConfig": {
+			"Inputs": [
+				{
+					"name": "",
+					"type": "Attribute",
+					"value": ""
+				},
+				{
+					"name": "query",
+					"type": "Text",
+					"value": "Query"
+				},
+				{
+					"name": "",
+					"type": "Function",
+					"value": "service_library.run.parser_library.input_parser.generate_fulfillment_request",
+                    "args": ["query", "category"]
+				}
+			],
+			"Outputs": [
+				{
+					"name": "Text",
+					"type": "Attribute",
+					"value": "Response.Text"
+				},
+				{
+					"name": "AgentAction",
+					"type": "Attribute",
+					"value": "Response.CleanedText"
+				},
+				{
+					"name": "SQL Query",
+					"type": "Attribute",
+					"value": "CustomData.RephrasedQuery"
+				}
+			]
+		}
+	}
+}

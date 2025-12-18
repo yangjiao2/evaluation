@@ -1,0 +1,112 @@
+{
+  "EvaluationSchema": {
+    "Notification": {
+      "EmailRecipients": [
+        "bugnemo-evaluation@exchange.nvidia.com"
+      ]
+    },
+    "NemoEvaluator": {
+      "DatasetConfig": {
+        "Engine": "local"
+      },
+      "Evaluators": [
+        {
+          "name": "llm_evaluation",
+          "column_map": {
+            "question": "Query",
+            "reference": "Correct Answer",
+            "answer": "Response",
+            "category": "Category",
+            "additional_params": [
+              "Prompts Data"
+            ]
+          },
+          "model": {
+            "llm_name": "mixtral-8x22b"
+          },
+          "evaluator_payload": {
+            "eval_type": "llm_as_a_judge",
+            "eval_subtype": "mtbench",
+            "mode": "single",
+            "judge_inference_params": {
+              "top_p": 0.1,
+              "top_k": 40,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 600
+            },
+            "inference_params": {
+              "tokens_to_generate": 600,
+              "temperature": 0,
+              "top_k": 1,
+              "top_p": 0.75,
+              "stop": [],
+              "extra_body": {
+              }
+            }
+          },
+          "judge_config": {
+            "prompt_module": "eval_prompt_library.nvbugs_eval_prompt.NVbugsEvaluationPrompt",
+            "output_format": "output_format",
+            "template": "eval_template",
+            "scorers": [
+              "Accuracy"
+            ],
+            "parse_keys": [
+              "Explanation"
+            ]
+          },
+          "run_config": {
+            "Outputs": [
+              {
+                "type": "Attribute",
+                "value": ""
+              },
+              {
+                "name": "Score",
+                "type": "Function",
+                "value": "service_library.run.parser_library.nvbugs_parser.rescale_accuracy_score"
+              },
+              {
+                "type": "Attribute",
+                "value": "Score"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "RegressionSchema": {
+    "DatasetConfig": {
+      "Engine": "s3",
+      "DatasetFolder": "nvbugs",
+      "Name": "nvbugs",
+      "RunFile": "t2yb_ground_truth_data_r.xlsx",
+      "DatasetPath": "dataset/t2yb_r3.xlsx"
+    },
+    "DataConfigs": {
+      "column_map": {
+        "question": "Query",
+        "reference": "Correct Answer",
+        "category": "Source"
+      }
+    },
+    "RunConfig": {
+      "Inputs": [
+        {
+          "name": "",
+          "type": "Attribute",
+          "value": ""
+        }
+      ],
+      "Outputs": [
+        {
+          "name": "",
+          "type": "Attribute",
+          "value": ""
+        }
+      ]
+    }
+  }
+}

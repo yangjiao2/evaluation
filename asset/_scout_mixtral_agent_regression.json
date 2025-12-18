@@ -1,0 +1,45 @@
+{
+  "RegressionSchema": {
+    "Notification": {
+      "EmailRecipients": [
+        "yangj@nvidia.com"
+      ]
+    },
+    "DatasetConfig": {
+      "Engine": "local",
+      "DatasetPath": "script/scout-evaluation.xlsx"
+    },
+    "RunConfig": {
+      "Inputs": [
+        {
+          "name": "",
+          "type": "Attribute",
+          "value": ""
+        },
+        {
+          "name": "",
+          "type": "Function",
+          "value": "service_library.run.parser_library.input_parser.generate_fulfillment_request",
+          "args": [
+            "Query"
+          ]
+        }
+      ],
+      "Outputs": [
+        {
+          "name": "Response",
+          "type": "Attribute",
+          "value": "Response.Text"
+        },
+        {
+          "name": "IRBot response",
+          "type": "Function",
+          "value": "service_library.run.parser_library.scout_parser.fetch_ir_bot_data",
+          "args": [
+            "Query"
+          ]
+        }
+      ]
+    }
+  }
+}

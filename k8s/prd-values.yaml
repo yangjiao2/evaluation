@@ -1,0 +1,14 @@
+image:
+  tag: prd-{VERSION}
+  
+env: prd
+replicaCount: 2
+
+ingress:
+  certificateARN: arn:aws:acm:us-west-2:507125957989:certificate/656f96f6-3d57-4c74-ad74-7578bff1219d
+  groupName: prd-api
+  loadBalancerName: a-us-west-2-nvbot-prd-api
+
+hpa:
+  maxReplicas: 5
+  minReplicas: 2

@@ -1,0 +1,64 @@
+namespace: ns-nvbot-evaluation
+
+image:
+  name: gitlab-master.nvidia.com/jarvis-chatbot/evaluation
+  tag: latest
+
+imageCredentials:
+  registry: https://gitlab-master.nvidia.com
+  username: nvbot-eks-deploy
+  email: nvbot-developers@exchange.nvidia.com
+  creds: "***"
+
+deployment:
+  resources:
+    limits:
+      cpu: 500m
+    requests:
+      cpu: 250m
+
+
+containerName: nvbot-evaluation
+
+containerPort:
+  exists: true
+  ports:
+    - containerPort: 5000
+      name: http
+      protocol: TCP
+
+healthCheck: /evaluation
+datadogVersion: v1.17.1
+
+configMapData:
+  NV_VAULT_ADDR: https://stg.vault.nvidia.com
+
+service:
+  exists: True
+  ports:
+  - port: 5000
+    targetPort: 5000
+  type: NodePort
+
+ingress:
+  enabled: true
+  servicePort: 5000
+  healthCheckInterval: 60
+
+hpa:
+  enabled: true
+  averageUtilization: 80
+
+livenessProbe: true
+
+# Secrets
+NV_VAULT_ROLEID: "***"
+NV_VAULT_SECRETID: "***"
+DD_LOGS_INJECTION: "true"
+DD_PROFILING_ENABLED: "true"
+NVSF_CLIENT_ID: "***"
+NVSF_CLIENT_ID_NONPRD: "***"
+LLM_GATEWAY_CLIENT_ID: "***"
+LLM_GATEWAY_CLIENT_SECRET: "***"
+IT_SUPPORT_NVAUTH_ACCOUNT_TOKEN: "***"
+IT_SUPPORT_BEARER_TOKEN: "***"

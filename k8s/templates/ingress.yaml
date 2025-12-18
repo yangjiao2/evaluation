@@ -1,0 +1,32 @@
+{{- if .Values.ingress.enabled }}
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ include "app.name" . }}-ingress-{{ .Values.env }}
+  namespace: {{ .Values.namespace }}-{{ .Values.env }}
+  labels:
+    app: {{ include "app.name" . }}
+    env: {{ .Values.env }}
+  {{- include "app.labels" . | nindent 4 }}
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/certificate-arn: {{ .Values.ingress.certificateARN }}
+    alb.ingress.kubernetes.io/group.name: {{ .Values.ingress.groupName }}
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/load-balancer-name: {{ .Values.ingress.loadBalancerName }}
+    alb.ingress.kubernetes.io/scheme: internal
+    alb.ingress.kubernetes.io/healthcheck-path: {{ .Values.healthCheck | quote }}
+    alb.ingress.kubernetes.io/healthcheck-interval-seconds: {{ .Values.ingress.healthCheckInterval | quote }}
+    alb.ingress.kubernetes.io/target-type: ip
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          service:
+            name: {{ include "app.name" . }}-service-{{ .Values.env }}
+            port:
+              number: {{ .Values.ingress.servicePort }}
+        path: {{ .Values.healthCheck }}
+        pathType: Prefix
+  {{ end }}

@@ -1,0 +1,47 @@
+metadata:
+  name: post-run
+  namespace: nemo-evaluation
+  labels:
+    example: 'true'
+spec:
+  workflowMetadata:
+    labels:
+      example: 'true'
+  schedule: '* * * * *'
+  workflowSpec:
+    entrypoint: argosay
+    arguments:
+      parameters:
+        - name: base_url
+          value: http://nvbot-evaluation-service-dev.ns-nvbot-evaluation-dev.svc.cluster.local:5000/evaluation
+    templates:
+      - name: argosay
+        inputs:
+          parameters:
+            - name: base_url
+              value: '{{workflow.parameters.base_url}}'
+        outputs: {}
+        metadata: {}
+        container:
+          name: main
+          image: curlimages/curl
+          command:
+            - curl
+          # args:
+          #   - >-
+          #     http://nvbot-evaluation-service-dev.ns-nvbot-evaluation-dev.svc.cluster.local:5000/evaluation
+          args:
+          - '-X'
+          - 'POST'
+          - 'http://nvbot-evaluation-service-dev.ns-nvbot-evaluation-dev.svc.cluster.local:5000/evaluation/post_processing'
+          - '-H'
+          - 'accept: application/json'
+          - '-H'
+          - 'Content-Type: application/json'
+          - '-d'
+          - '{"Status":"STARTED"}'
+          resources: {}
+    ttlStrategy:
+      secondsAfterCompletion: 300
+    podGC:
+      strategy: OnPodCompletion

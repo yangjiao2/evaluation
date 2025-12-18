@@ -1,0 +1,50 @@
+{
+  "EvaluationSchema": {
+    "Notification": {
+      "EmailRecipients": [
+        "yangj@nvidia.com"
+      ]
+    },
+    "NemoEvaluator": {
+      "DatasetConfig": {
+        "Engine": "local"
+      },
+      "Evaluators": [
+        {
+          "name": "custom_evaluation",
+          "column_map": {
+            "question": "Query",
+            "reference": "Correct Answer",
+            "answer": "Text",
+            "category": "Category"
+          },
+          "model": {
+            "llm_name": "gpt-43b-905"
+          },
+          "evaluator_payload": {
+            "eval_type": "automatic",
+            "eval_subtype": "custom_eval",
+            "inference_configs": [
+              {
+                "run_inference": false,
+                "inference_params": {
+                  "tokens_to_generate": 600,
+                  "temperature": 0,
+                  "top_k": 1
+                }
+              }
+            ],
+            "scorers": [
+              "accuracy",
+              "bleu",
+              "rouge",
+              "em",
+              "f1",
+              "bert"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

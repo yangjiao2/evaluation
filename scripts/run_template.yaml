@@ -1,0 +1,59 @@
+metadata:
+  name: nvinfo-sanity
+  namespace: nemo-evaluation
+  labels:
+    example: 'true'
+spec:
+  workflowMetadata:
+    labels:
+      example: 'true'
+  schedule: '* */24 * * *'
+  workflowSpec:
+    entrypoint: main-workflow
+    arguments:
+      parameters:
+        - name: message
+          value: hello argo
+        - name: base_url
+          value: http://nvbot-evaluation-service-dev.ns-nvbot-evaluation-dev.svc.cluster.local:5000/evaluation
+    templates:
+      - name: main-workflow
+        inputs: {}
+        outputs: {}
+        metadata: {}
+        dag:
+          tasks:
+            - name: run-nvinfo-sanity-prd
+              template: nvinfo-sanity-prd
+              arguments:
+                parameters:
+                  - name: base_url
+                    value: '{{workflow.parameters.base_url}}'
+
+      - name: nvinfo-sanity-prd
+        inputs:
+          parameters:
+            - name: message
+              value: '{{workflow.parameters.message}}'
+        container:
+          name: nvinfo-sanity-prd
+          image: curlimages/curl
+          command:
+            - /bin/sh
+            - '-c'
+          args:
+            - >
+              curl -X POST -H 'accept: application/json' -H 'Content-Type:
+              application/json' -d '{
+                "Project": "nvinfo_mixtral_agent_sanity",
+                "RunType": "cron",
+                "System": "nvinfo",
+                "Model": "mixtral_agent",
+                "Attachments": [],
+                "UserId": "nvbot_evaluation",
+                "Env": "prd"
+              }' {{workflow.parameters.base_url}}/regression_run
+    ttlStrategy:
+      secondsAfterCompletion: 300
+    podGC:
+      strategy: OnPodCompletion

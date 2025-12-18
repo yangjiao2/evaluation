@@ -1,0 +1,28 @@
+{
+        "model": {
+            "inference_url": "http://nim-nemollm-inference.nemo-microservices.svc.cluster.local:8005/v1",
+            "llm_name": "llama-2-70b"
+        },
+        "evaluations": [
+            {
+                "eval_type": "automatic",
+                "eval_subtype": "custom_eval",
+                "input_file": "nds:",
+                "inference_configs": [
+                    {
+                        "model": {
+                            "llm_name": "llama-2-70b"
+                        },
+                        "run_inference": "true",
+                        "inference_params": {
+                            "tokens_to_generate": 32,
+                            "temperature": 1,
+                            "top_k": 1
+                        }
+                    }
+                ],
+                "num_of_samples": -1,
+                "scorers": ["accuracy", "bleu", "rouge", "em", "f1"]
+            }
+        ]
+    }

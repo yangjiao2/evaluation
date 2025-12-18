@@ -1,0 +1,1196 @@
+[
+    {
+        "prompt": "Can I get Adobe acrobat pro?",
+        "category": "Closed QA",
+        "ideal_response": "You can request Adobe Acrobat pro by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=1c784e5597e111d0b01ab1511153afc7] and selecting Adobe acrobat as the required software.",
+        "source": ""
+    },
+    {
+        "prompt": "Do we have access to adobe acrobat?",
+        "category": "Closed QA",
+        "ideal_response": "You can request Adobe Acrobat pro by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=1c784e5597e111d0b01ab1511153afc7] and selecting Adobe acrobat as the required software.",
+        "source": ""
+    },
+    {
+        "prompt": "do we have access to adobe acrobat professional?",
+        "category": "Closed QA",
+        "ideal_response": "You can request Adobe Acrobat pro by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=1c784e5597e111d0b01ab1511153afc7] and selecting Adobe acrobat as the required software.",
+        "source": ""
+    },
+    {
+        "prompt": "I need adobe acrobat professional",
+        "category": "Closed QA",
+        "ideal_response": "You can request Adobe Acrobat pro by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=1c784e5597e111d0b01ab1511153afc7] and selecting Adobe acrobat as the required software.",
+        "source": ""
+    },
+    {
+        "prompt": "I'd like to request for adobe acrobat",
+        "category": "Closed QA",
+        "ideal_response": "You can request Adobe Acrobat pro by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=1c784e5597e111d0b01ab1511153afc7] and selecting Adobe acrobat as the required software.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I change my display name?",
+        "category": "Closed QA",
+        "ideal_response": "You can request a change to your display name by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=bc59e62c97fd2990275ef7300153af7a]",
+        "source": ""
+    },
+    {
+        "prompt": "I need my display name changed",
+        "category": "Closed QA",
+        "ideal_response": "You can request a change to your display name by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=bc59e62c97fd2990275ef7300153af7a]",
+        "source": ""
+    },
+    {
+        "prompt": "Id like to request a change in my diplay name",
+        "category": "Closed QA",
+        "ideal_response": "You can request a change to your display name by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=bc59e62c97fd2990275ef7300153af7a]",
+        "source": ""
+    },
+    {
+        "prompt": "how do I change my displayed name?",
+        "category": "Closed QA",
+        "ideal_response": "You can request a change to your display name by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=bc59e62c97fd2990275ef7300153af7a]",
+        "source": ""
+    },
+    {
+        "prompt": "How can I share sound from my computer in a Microsoft Teams meeting?",
+        "category": "Closed QA",
+        "ideal_response": "To share sound from your computer in a Microsoft Teams meeting:\n- Click on the \"Share Content\" icon found next to the \"Leave Meeting\" button.\n- On the top left of your sharing options, enable the \"Include computer sound\" option. ",
+        "source": ""
+    },
+    {
+        "prompt": "How do I share the sound from my computer in a Teams meeting?",
+        "category": "Closed QA",
+        "ideal_response": "To share sound from your computer in a Microsoft Teams meeting:\n- Click on the \"Share Content\" icon found next to the \"Leave Meeting\" button.\n- On the top left of your sharing options, enable the \"Include computer sound\" option. ",
+        "source": ""
+    },
+    {
+        "prompt": "How do I share the sound from my computer in a meeting?",
+        "category": "Closed QA",
+        "ideal_response": "To share sound from your computer in a Microsoft Teams meeting:\n- Click on the \"Share Content\" icon found next to the \"Leave Meeting\" button.\n- On the top left of your sharing options, enable the \"Include computer sound\" option. ",
+        "source": ""
+    },
+    {
+        "prompt": "Can I connect my personal device to NVIDIA WiFi or network?",
+        "category": "Closed QA",
+        "ideal_response": "No, your personal devices must only be connected to the Guest or Visitor Wifi networks. To connect to the visitor Wi-Fi, search for NV_VISITOR in your available wireless network and connect to it.  Password is listed under \"Visitor Wi-Fi\" (NVINFO \u2192 Support & Tools \u2192 Visitor Wi-Fi )",
+        "source": ""
+    },
+    {
+        "prompt": "can I connect my personal machine to wifi?",
+        "category": "Closed QA",
+        "ideal_response": "Your personal devices must only be connected to the Guest or Visitor Wifi networks. To connect to the visitor Wi-Fi, search for NV_VISITOR in your available wireless network and connect to it.  Password is listed under \"Visitor Wi-Fi\" (NVINFO \u2192 Support & Tools \u2192 Visitor Wi-Fi )",
+        "source": ""
+    },
+    {
+        "prompt": "Can I get a temporary phone when travelling for work?",
+        "category": "Closed QA",
+        "ideal_response": "Yes, NVIDIA does provide temporary loaner mobile phones for employees traveling for work. To request one, it's required that you open a help request with IT here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=ef54b674977da990275ef7300153af1b",
+        "source": ""
+    },
+    {
+        "prompt": "Can I use my own laptop for work?",
+        "category": "Closed QA",
+        "ideal_response": "It is mentioned that you can use your own laptop for work. However, your personal machines are not supported by NVIDIA IT for hardware, software or configurations. It is also important that you follow certain minimum security practices in order to keep work data secure.",
+        "source": ""
+    },
+    {
+        "prompt": "Can I use my own phone number and mobile phone for work?",
+        "category": "Closed QA",
+        "ideal_response": "Yes, at NVIDIA, employees are able to use their personal phones and phone numbers for work.",
+        "source": ""
+    },
+    {
+        "prompt": "Does NVIDIA offer mobile phones to employees?",
+        "category": "Closed QA",
+        "ideal_response": "Yes, but mobile phones are only available to employees, with a business justification and approval from their manager.",
+        "source": ""
+    },
+    {
+        "prompt": "how do I change a svc account password?",
+        "category": "Closed QA",
+        "ideal_response": "You can do this from any NVIDIA device, regardless of OS (Windows, MacBook, or Linux), so long as you are connected to NVIDIA VPN or internal network.  \n\n1. Open an incognito or inPrivate window from your browser. Go to the Microsoft password change portal: https://portal.microsoftonline.com/ChangePassword.aspx. \n\nNote: You must do this from incognito or inPrivate mode, otherwise the browser will automatically assume you are changing the password for your personal @nvidia.com account instead of the service account\n\n2. You will be prompted to log in. Sign in with the service account name and old/current password. \n\n3. Enter the old password, new password, and repeat the new password. Hit Submit.\n\n4. When the password change succeeds, you will be auto-logged out of the account and prompted to sign in again. please verify that you are able to sign in with the new password.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I change my name in Outlook?",
+        "category": "Closed QA",
+        "ideal_response": "If you'd like your display name changed in the NVIDIA directory, please open a request with IT [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=bc59e62c97fd2990275ef7300153af7a]",
+        "source": ""
+    },
+    {
+        "prompt": "How do I change my NVIDIA Password on Mac?",
+        "category": "Closed QA",
+        "ideal_response": "You can change your NVIDIA password on any internet connected device by visiting the [change password portal | https://account.activedirectory.windowsazure.com/ChangePassword.aspx]. On Macs you can also use the NoMAD application.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I change my NVIDIA password on Windows?",
+        "category": "Closed QA",
+        "ideal_response": "You can change your NVIDIA password on any internet connected device by visiting the [change password portal | https://account.activedirectory.windowsazure.com/ChangePassword.aspx]. On Windows, you can also use ctrl-alt-delete method.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I change my password?",
+        "category": "Closed QA",
+        "ideal_response": "You can change your NVIDIA password on any internet connected device by visiting the change password portal. On Windows, you can also use ctrl-alt-delete method and on Macs you can additionally use the NoMAD application to change your password as well.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I change the password for my service account?",
+        "category": "Closed QA",
+        "ideal_response": "You can do this from any NVIDIA device, regardless of OS (Windows, MacBook, or Linux), so long as you are connected to NVIDIA VPN or internal network.  \n\n1. Open an incognito or inPrivate window from your browser. Go to the Microsoft password change portal: https://portal.microsoftonline.com/ChangePassword.aspx. \n\nNote: You must do this from incognito or inPrivate mode, otherwise the browser will automatically assume you are changing the password for your personal @nvidia.com account instead of the service account\n\n2. You will be prompted to log in. Sign in with the service account name and old/current password. \n\n3. Enter the old password, new password, and repeat the new password. Hit Submit.\n\n4. When the password change succeeds, you will be auto-logged out of the account and prompted to sign in again. please verify that you are able to sign in with the new password.",
+        "source": ""
+    },
+    {
+        "prompt": "how do I connect my personal machine to wireless?",
+        "category": "Closed QA",
+        "ideal_response": "Your personal devices must only be connected to the Guest or Visitor Wifi networks. To connect to the visitor Wi-Fi, search for NV_VISITOR in your available wireless network and connect to it.  Password is listed under \"Visitor Wi-Fi\" (NVINFO \u2192 Support & Tools \u2192 Visitor Wi-Fi )",
+        "source": ""
+    },
+    {
+        "prompt": "How do I connect to I connect to VPN on a Mac?",
+        "category": "Closed QA",
+        "ideal_response": "There are a couple of ways to connect to the VPN on a Mac. You can use either the Pulse Secure VPN client, or the OpenConnect VPN client software.\n\nUsing Pulse Secure:\n\nDownload the Pulse Secure software, install & run.\nAdd a new VPN URL connection by clicking on the \"+\" button.\nFor details, refer to this IT article KB0011793.\n\nUsing OpenConnect:\n\nDownload OpenConnect, install & run.\nConfigure the VPN connection settings.\nFor detailed instructions, refer to this page.",
+        "source": ""
+    },
+    {
+        "prompt": "how do I connect to visitor wireless network?",
+        "category": "Closed QA",
+        "ideal_response": "To connect to the visitor Wi-Fi, search for NV_VISITOR in your available wireless network and connect to it.  Password is listed under \"Visitor Wi-Fi\" (NVINFO \u2192 Support & Tools \u2192 Visitor Wi-Fi )",
+        "source": ""
+    },
+    {
+        "prompt": "How do I contact IT; or open a ticket or request with IT?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact IT by opening a help request on the NVIDIA Help Portal, by chat on the NVIDIA Help Portal, by emailing nvidia@service-now.com, and by phone. For a complete list of phone numbers see this.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I contact IT?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact IT by opening a help request on the NVIDIA Help Portal, by chat on the NVIDIA Help Portal, by emailing nvidia@service-now.com, and by phone. For a complete list of phone numbers see this.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I generate a certificate signing request",
+        "category": "Closed QA",
+        "ideal_response": "Please see this guide for how to generate a CSR (certificate signing request) for an internal or external SSl certificate.",
+        "source": ""
+    },
+    {
+        "prompt": "How can I get a Linux laptop?",
+        "category": "Closed QA",
+        "ideal_response": "To request a Linux laptop at NVIDIA, you can fill out the IT Request form here https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=f91b2130db5cdd1061cb144e139619dc",
+        "source": ""
+    },
+    {
+        "prompt": "How can I get a Mac laptop?",
+        "category": "Closed QA",
+        "ideal_response": "To request a Mac laptop at NVIDIA, you can fill out the IT Request form here https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=f91b2130db5cdd1061cb144e139619dc",
+        "source": ""
+    },
+    {
+        "prompt": "How do I get a loaner or temporary laptop?",
+        "category": "Closed QA",
+        "ideal_response": "To request a loaner laptop at NVIDIA, you can fill out the IT Request form here https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=f91b2130db5cdd1061cb144e139619dc",
+        "source": ""
+    },
+    {
+        "prompt": "How do I get a new laptop?",
+        "category": "Closed QA",
+        "ideal_response": "To request a new laptop at NVIDIA, you can fill out the IT Request form here https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=f91b2130db5cdd1061cb144e139619dc",
+        "source": ""
+    },
+    {
+        "prompt": "I need a new laptop",
+        "category": "Closed QA",
+        "ideal_response": "To request a new laptop at NVIDIA, you can fill out the IT Request form here https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=f91b2130db5cdd1061cb144e139619dc",
+        "source": ""
+    },
+    {
+        "prompt": "Can I get Adobe photoshop?",
+        "category": "Closed QA",
+        "ideal_response": "You can request Adobe Photoshop by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=1c784e5597e111d0b01ab1511153afc7] and selecting Adobe Photoshop as the required software.",
+        "source": ""
+    },
+    {
+        "prompt": "Do we have access to adobe photoshop?",
+        "category": "Closed QA",
+        "ideal_response": "You can request Adobe Acrobat by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=1c784e5597e111d0b01ab1511153afc7] and selecting Adobe acrobat as the required software.",
+        "source": ""
+    },
+    {
+        "prompt": "do we have access to adobe photo shop?",
+        "category": "Closed QA",
+        "ideal_response": "You can request Adobe Photoshop by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=1c784e5597e111d0b01ab1511153afc7] and selecting Adobe Photoshop as the required software.",
+        "source": ""
+    },
+    {
+        "prompt": "I need adobe photoshop",
+        "category": "Closed QA",
+        "ideal_response": "You can request Adobe Photoshop by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=1c784e5597e111d0b01ab1511153afc7] and selecting Adobe Photoshop as the required software.",
+        "source": ""
+    },
+    {
+        "prompt": "I'd like to request adobe photoshop",
+        "category": "Closed QA",
+        "ideal_response": "You can request Adobe Photoshop by opening a request [here | https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=1c784e5597e111d0b01ab1511153afc7] and selecting Adobe Photoshop as the required software.",
+        "source": ""
+    },
+    {
+        "prompt": "what is the url for nvbugs pro?",
+        "category": "Closed QA",
+        "ideal_response": "The URL for NVBugs Pro is  https://nvbugspro.nvidia.com/bug. You can use this link to access the NVBugs Pro environment. If you need any further assistance, feel free to ask.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I switch back to the legacy nvbugs from nvbugs pro?",
+        "category": "Closed QA",
+        "ideal_response": "Theres a toggle option to switch back to the old NVBugs UI if you're using NVBugs pro",
+        "source": ""
+    },
+    {
+        "prompt": "how do I switch from nvbugs pro to the old  UI?",
+        "category": "Closed QA",
+        "ideal_response": "Theres a toggle option to switch back to the old NVBugs UI if you're using NVBugs pro",
+        "source": ""
+    },
+    {
+        "prompt": "what is my grade level",
+        "category": "Closed QA",
+        "ideal_response": "I'm Sorry, I'm unable to answer questions related to a specific employee's protected HR data.",
+        "source": ""
+    },
+    {
+        "prompt": "what's my address",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to answer questions related to a specific employee's protected, personal information.",
+        "source": ""
+    },
+    {
+        "prompt": "am i married",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to answer questions related to a specific employee's protected, personal information.",
+        "source": ""
+    },
+    {
+        "prompt": "How old am i",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to answer questions related to a specific employee's protected, personal information.",
+        "source": ""
+    },
+    {
+        "prompt": "What's my race",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to answer questions related to a specific employee's protected, personal information.",
+        "source": ""
+    },
+    {
+        "prompt": "What's my ethnicity",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to answer questions related to a specific employee's protected, personal information.",
+        "source": ""
+    },
+    {
+        "prompt": "am i on pip",
+        "category": "Closed QA",
+        "ideal_response": "I'm Sorry, I'm unable to answer questions related to a specific employee's protected HR data.",
+        "source": ""
+    },
+    {
+        "prompt": "What is my SSN?",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to answer questions related to a specific employee's protected, personal information.",
+        "source": ""
+    },
+    {
+        "prompt": "Where can I find the holiday calendar?",
+        "category": "Closed QA",
+        "ideal_response": "The link to NVIDIA's holiday calendar is https://nvcalendar.azurewebsites.net/HolidayCalendar/Index",
+        "source": ""
+    },
+    {
+        "prompt": "Where is the holiday calendar?",
+        "category": "Closed QA",
+        "ideal_response": "The link to NVIDIA's holiday calendar is https://nvcalendar.azurewebsites.net/HolidayCalendar/Index",
+        "source": ""
+    },
+    {
+        "prompt": "How do I get to holiday calendar?",
+        "category": "Closed QA",
+        "ideal_response": "The link to NVIDIA's holiday calendar is https://nvcalendar.azurewebsites.net/HolidayCalendar/Index",
+        "source": ""
+    },
+    {
+        "prompt": "Does NVIDIA offer benefits for mental health?",
+        "category": "Closed QA",
+        "ideal_response": "Yes, NVIDIA offers a variety of mental health benefits and resources to support employees. These resources are designed to help manage stress, anxiety, depression, loss, confusion, frustration, or any other challenge. If immediate help is needed, employees can schedule a virtual visit with a mental health care provider or contact the Employee Assistance Program (EAP), available 24/7, at 1-844-729-5172. \n\nNVIDIA also provides dedicated counselors, Clark Hsu and Chris Senter, whom employees can connect with online or via phone. Other resources include the Ginger app for 24/7 emotional support, LinkedIn Learning for mental health support, and Cigna Mental Health Resources for Cigna members. \n\nAdditionally, NVIDIA has a team of individuals certified in mental health first aid who are trained to have confidential conversations about mental health and substance use problems, and can connect employees to the right resources quickly.",
+        "source": ""
+    },
+    {
+        "prompt": "how can I log into VSP site?",
+        "category": "Closed QA",
+        "ideal_response": "To log in to VSP, you need to register once for an account. Use your registered username and password to log in. If you don't remember, you can use the forgot your password or username link to retrieve your credentials. For VSP, your Alternate ID is used in place of your SSN.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I apply for paternity leave?",
+        "category": "Closed QA",
+        "ideal_response": "To begin the process for requesting a leave of absence, reach out to our leave administrator, the Larkin Company at 1.866.923.3336 or NVIDIA-LOA@thelarkincompany.com.\n\nLarkin will provide a checklist of items to complete as well as the necessary paperwork required to request the leave. They will also be able to answer any questions you may have about how your pay will be coordinated while out on a leave absence.\n\nIf you have additional questions about the leave process, please reach out to Larkin directly.\n\nFor additional information visit the Leave of Absence Page and the NVIDIA Benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "How many RSUs did I get this year?",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to answer questions related to a specific employee's protected, personal information.",
+        "source": ""
+    },
+    {
+        "prompt": "What is my salary?",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to answer questions related to a specific employee's protected, personal information.",
+        "source": ""
+    },
+    {
+        "prompt": "how much raise did i get this year?",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to answer questions related to a specific employee's protected, personal information.",
+        "source": ""
+    },
+    {
+        "prompt": "Should I sign up for HSA or FSA?",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to advise on whether you should sign up for an HSA or an FSA. That would depend on your personal situation. But here are a few helpful links related to NVIDIA's health plans that may help you make that decision.",
+        "source": ""
+    },
+    {
+        "prompt": "Should I sell my NVIDIA stock now?",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to offer specific financial advice for your personal situation.",
+        "source": ""
+    },
+    {
+        "prompt": "Should I sell ESPP or RSU?",
+        "category": "Closed QA",
+        "ideal_response": "I'm sorry, I'm unable to offer specific financial advice for your personal situation.",
+        "source": ""
+    },
+    {
+        "prompt": "What is my benefits Alternate ID?",
+        "category": "Closed QA",
+        "ideal_response": "NVIDIA created an alternate ID number to use in place of your SSN. This alternate ID number can be used to identify you in our Cigna plans for medical and mental health services, Delta Dental, VSP, Crossover, LegalEase, Identity Force, GuidanceResources EAP, Pet Insurance, Hospital Indemnity, and Accident Insurance. \n\nThe formula for your alt ID is: 81 + your 2-digit year of birth + your NVIDIA badge number (up to 5 digits). If your NVIDIA badge number is less than 5 digits, simply precede it with enough zeroes to create a full 9-digit number.\n\nFor example, John\u2019s birth year was 1978, and his employee badge number is 6852. His alt ID is: 81 + 78 + 06852 = 817806852.",
+        "source": ""
+    },
+    {
+        "prompt": "What is my alternate id?",
+        "category": "Closed QA",
+        "ideal_response": "NVIDIA created an alternate ID number to use in place of your SSN. This alternate ID number can be used to identify you in our Cigna plans for medical and mental health services, Delta Dental, VSP, Crossover, LegalEase, Identity Force, GuidanceResources EAP, Pet Insurance, Hospital Indemnity, and Accident Insurance. \n\nThe formula for your alt ID is: 81 + your 2-digit year of birth + your NVIDIA badge number (up to 5 digits). If your NVIDIA badge number is less than 5 digits, simply precede it with enough zeroes to create a full 9-digit number.\n\nFor example, John\u2019s birth year was 1978, and his employee badge number is 6852. His alt ID is: 81 + 78 + 06852 = 817806852.",
+        "source": ""
+    },
+    {
+        "prompt": "what is an alternate id?",
+        "category": "Closed QA",
+        "ideal_response": "NVIDIA created an alternate ID number to use in place of your SSN. This alternate ID number can be used to identify you in our Cigna plans for medical and mental health services, Delta Dental, VSP, Crossover, LegalEase, Identity Force, GuidanceResources EAP, Pet Insurance, Hospital Indemnity, and Accident Insurance. \n\nThe formula for your alt ID is: 81 + your 2-digit year of birth + your NVIDIA badge number (up to 5 digits). If your NVIDIA badge number is less than 5 digits, simply precede it with enough zeroes to create a full 9-digit number.\n\nFor example, John\u2019s birth year was 1978, and his employee badge number is 6852. His alt ID is: 81 + 78 + 06852 = 817806852.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I contact Cigna?",
+        "category": "Closed QA",
+        "ideal_response": "Employees can schedule phone or virtual appointments with our dedicated Cigna representative.\n\nIf you have questions around navigating your health plan, how your medical benefits work, or claim questions, send an email or call 408-486-7390.\n\nTo learn more about our Cigna plans, view our NVIDIA Microsite.\n\nFor more general benefits information, visit the benefits page.",
+        "source": ""
+    },
+    {
+        "prompt": "I need to contact cigna",
+        "category": "Closed QA",
+        "ideal_response": "Employees can schedule phone or virtual appointments with our dedicated Cigna representative.\n\nIf you have questions around navigating your health plan, how your medical benefits work, or claim questions, send an email or call 408-486-7390.\n\nTo learn more about our Cigna plans, view our NVIDIA Microsite.\n\nFor more general benefits information, visit the benefits page.",
+        "source": ""
+    },
+    {
+        "prompt": "what is the contact information for cigna?",
+        "category": "Closed QA",
+        "ideal_response": "Employees can schedule phone or virtual appointments with our dedicated Cigna representative.\n\nIf you have questions around navigating your health plan, how your medical benefits work, or claim questions, send an email or call 408-486-7390.\n\nTo learn more about our Cigna plans, view our NVIDIA Microsite.\n\nFor more general benefits information, visit the benefits page.",
+        "source": ""
+    },
+    {
+        "prompt": "What is a Health Savings Account (HSA)?",
+        "category": "Closed QA",
+        "ideal_response": "A Health Savings Account (HSA) is a personal savings account that you use to save and pay for qualifying healthcare expenses. You can open an HSA if you are enrolled in an \u201cHSA-qualified\u201d health plan. NVIDIA will contribute up to $3,000 to your account, depending on the plan you choose and how many dependents you cover.\n\nA few important HSA features:\n\nYou own the account. The money is yours to keep forever even if you leave the company or retire.\nThere is no \u201cuse it or lose it\u201d rule. Unused money in your HSA is yours to keep.\nYour HSA deposits and withdrawals (for eligible expenses) are tax-free.\nYou can invest your funds to make them grow.\nIf you contributed to an HSA with a prior employer in the same plan year, you\u2019ll need to deduct that amount from your NVIDIA annual election contribution. Otherwise, you\u2019ll exceed the IRS annual amount.\nSee the list of qualifying expenses on the IRS website.\n\nFor more information about HSAs visit the NVIDIA Benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "What is an HSA?",
+        "category": "Closed QA",
+        "ideal_response": "A Health Savings Account (HSA) is a personal savings account that you use to save and pay for qualifying healthcare expenses. You can open an HSA if you are enrolled in an \u201cHSA-qualified\u201d health plan. NVIDIA will contribute up to $3,000 to your account, depending on the plan you choose and how many dependents you cover.\n\nA few important HSA features:\n\nYou own the account. The money is yours to keep forever even if you leave the company or retire.\nThere is no \u201cuse it or lose it\u201d rule. Unused money in your HSA is yours to keep.\nYour HSA deposits and withdrawals (for eligible expenses) are tax-free.\nYou can invest your funds to make them grow.\nIf you contributed to an HSA with a prior employer in the same plan year, you\u2019ll need to deduct that amount from your NVIDIA annual election contribution. Otherwise, you\u2019ll exceed the IRS annual amount.\nSee the list of qualifying expenses on the IRS website.\n\nFor more information about HSAs visit the NVIDIA Benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "What's an HSA?",
+        "category": "Closed QA",
+        "ideal_response": "A Health Savings Account (HSA) is a personal savings account that you use to save and pay for qualifying healthcare expenses. You can open an HSA if you are enrolled in an \u201cHSA-qualified\u201d health plan. NVIDIA will contribute up to $3,000 to your account, depending on the plan you choose and how many dependents you cover.\n\nA few important HSA features:\n\nYou own the account. The money is yours to keep forever even if you leave the company or retire.\nThere is no \u201cuse it or lose it\u201d rule. Unused money in your HSA is yours to keep.\nYour HSA deposits and withdrawals (for eligible expenses) are tax-free.\nYou can invest your funds to make them grow.\nIf you contributed to an HSA with a prior employer in the same plan year, you\u2019ll need to deduct that amount from your NVIDIA annual election contribution. Otherwise, you\u2019ll exceed the IRS annual amount.\nSee the list of qualifying expenses on the IRS website.\n\nFor more information about HSAs visit the NVIDIA Benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "What's a health savings account?",
+        "category": "Closed QA",
+        "ideal_response": "A Health Savings Account (HSA) is a personal savings account that you use to save and pay for qualifying healthcare expenses. You can open an HSA if you are enrolled in an \u201cHSA-qualified\u201d health plan. NVIDIA will contribute up to $3,000 to your account, depending on the plan you choose and how many dependents you cover.\n\nA few important HSA features:\n\nYou own the account. The money is yours to keep forever even if you leave the company or retire.\nThere is no \u201cuse it or lose it\u201d rule. Unused money in your HSA is yours to keep.\nYour HSA deposits and withdrawals (for eligible expenses) are tax-free.\nYou can invest your funds to make them grow.\nIf you contributed to an HSA with a prior employer in the same plan year, you\u2019ll need to deduct that amount from your NVIDIA annual election contribution. Otherwise, you\u2019ll exceed the IRS annual amount.\nSee the list of qualifying expenses on the IRS website.\n\nFor more information about HSAs visit the NVIDIA Benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "How much does NVIDIA contribute to an HSA?",
+        "category": "Closed QA",
+        "ideal_response": "NVIDIA will contribute up to $3,000 to your account, depending on the plan you choose and how many dependents you cover.",
+        "source": ""
+    },
+    {
+        "prompt": "How much does NVIDIA contribute to my HSA?",
+        "category": "Closed QA",
+        "ideal_response": "NVIDIA will contribute up to $3,000 to your account, depending on the plan you choose and how many dependents you cover.",
+        "source": ""
+    },
+    {
+        "prompt": "How much does NVIDIA contribute to HSA?",
+        "category": "Closed QA",
+        "ideal_response": "NVIDIA will contribute up to $3,000 to your account, depending on the plan you choose and how many dependents you cover.",
+        "source": ""
+    },
+    {
+        "prompt": "I have a benefits question",
+        "category": "Closed QA",
+        "ideal_response": "You can submit a benefits enquiry [here | https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=1bc78de49f331200d9011977677fcfae]",
+        "source": ""
+    },
+    {
+        "prompt": "Do employees get any workplace discounts?",
+        "category": "Closed QA",
+        "ideal_response": "Visit the employee [Discounts and Services | https://nvidia.sharepoint.com/sites/nvinfo/discounts-services/Pages/default.aspx] site to view all available offers. New discounts are added as they become available.\n\n* Links to third-party sites are provided for convenience and do not imply any endorsement of those sites or products or services provided at those sites. Any engagement of services shall be strictly between you and the third-party service provider. By engaging the third-party service provider, you assume all risk associated with contracting such services.",
+        "source": ""
+    },
+    {
+        "prompt": "where can I find more info on any discounts available to employees?",
+        "category": "Closed QA",
+        "ideal_response": "Visit the employee [Discounts and Services | https://nvidia.sharepoint.com/sites/nvinfo/discounts-services/Pages/default.aspx] site to view all available offers. New discounts are added as they become available.\n\n* Links to third-party sites are provided for convenience and do not imply any endorsement of those sites or products or services provided at those sites. Any engagement of services shall be strictly between you and the third-party service provider. By engaging the third-party service provider, you assume all risk associated with contracting such services.",
+        "source": ""
+    },
+    {
+        "prompt": "How to request a leave of absence (LOA)?",
+        "category": "Closed QA",
+        "ideal_response": "o begin the process for requesting a leave of absence, reach out to our leave administrator, the Larkin Company at 1.866.923.3336 or NVIDIA-LOA@thelarkincompany.com.\n\nLarkin will provide a checklist of items to complete as well as the necessary paperwork required to request the leave. They will also be able to answer any questions you may have about how your pay will be coordinated while out on a leave absence.\n\nNote: Larkin will work with us to coordinate your pay and time off. A notification email is sent by Larkin as well with dates of your leave to your manager, payroll and HR. Please do not submit any time off requests through the system.\n\nIf you have additional questions about the leave process, please reach out to Larkin directly.\n\nFor additional information visit the [Leave of Absence Page | https://nvidia.sharepoint.com/sites/nvinfo/hr/Pages/TimeAway/LOA-US.aspx] and the NVIDIA Benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I request a leave of absence?",
+        "category": "Closed QA",
+        "ideal_response": "o begin the process for requesting a leave of absence, reach out to our leave administrator, the Larkin Company at 1.866.923.3336 or NVIDIA-LOA@thelarkincompany.com.\n\nLarkin will provide a checklist of items to complete as well as the necessary paperwork required to request the leave. They will also be able to answer any questions you may have about how your pay will be coordinated while out on a leave absence.\n\nNote: Larkin will work with us to coordinate your pay and time off. A notification email is sent by Larkin as well with dates of your leave to your manager, payroll and HR. Please do not submit any time off requests through the system.\n\nIf you have additional questions about the leave process, please reach out to Larkin directly.\n\nFor additional information visit the [Leave of Absence Page | https://nvidia.sharepoint.com/sites/nvinfo/hr/Pages/TimeAway/LOA-US.aspx] and the NVIDIA Benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I request paternity leave?",
+        "category": "Closed QA",
+        "ideal_response": "o begin the process for requesting a leave of absence, reach out to our leave administrator, the Larkin Company at 1.866.923.3336 or NVIDIA-LOA@thelarkincompany.com.\n\nLarkin will provide a checklist of items to complete as well as the necessary paperwork required to request the leave. They will also be able to answer any questions you may have about how your pay will be coordinated while out on a leave absence.\n\nNote: Larkin will work with us to coordinate your pay and time off. A notification email is sent by Larkin as well with dates of your leave to your manager, payroll and HR. Please do not submit any time off requests through the system.\n\nIf you have additional questions about the leave process, please reach out to Larkin directly.\n\nFor additional information visit the [Leave of Absence Page | https://nvidia.sharepoint.com/sites/nvinfo/hr/Pages/TimeAway/LOA-US.aspx] and the NVIDIA Benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I apply for maternity leave?",
+        "category": "Closed QA",
+        "ideal_response": "o begin the process for requesting a leave of absence, reach out to our leave administrator, the Larkin Company at 1.866.923.3336 or NVIDIA-LOA@thelarkincompany.com.\n\nLarkin will provide a checklist of items to complete as well as the necessary paperwork required to request the leave. They will also be able to answer any questions you may have about how your pay will be coordinated while out on a leave absence.\n\nNote: Larkin will work with us to coordinate your pay and time off. A notification email is sent by Larkin as well with dates of your leave to your manager, payroll and HR. Please do not submit any time off requests through the system.\n\nIf you have additional questions about the leave process, please reach out to Larkin directly.\n\nFor additional information visit the [Leave of Absence Page | https://nvidia.sharepoint.com/sites/nvinfo/hr/Pages/TimeAway/LOA-US.aspx] and the NVIDIA Benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I update beneficiaries?",
+        "category": "Closed QA",
+        "ideal_response": "Visit the [beneficiaries | https://nvidia.sharepoint.com/sites/nvinfo/beneficiaries] page on NVINFO for a list of programs and systems to consider.\n\nFor instructions on how to update beneficiaries for each system, visit the NVIDIA [Stock Administration | https://nvidia.sharepoint.com/sites/stock/SitePages/Schwab-main.aspx#nominate-beneficiaries], [Retirement (beneficiaries link near the bottom) | https://nvidia.sharepoint.com/sites/nvinfo/retirement/Pages/US/Contributions-.aspx] and Benefits websites.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I update my beneficiaries?",
+        "category": "Closed QA",
+        "ideal_response": "Visit the [beneficiaries | https://nvidia.sharepoint.com/sites/nvinfo/beneficiaries] page on NVINFO for a list of programs and systems to consider.\n\nFor instructions on how to update beneficiaries for each system, visit the NVIDIA [Stock Administration | https://nvidia.sharepoint.com/sites/stock/SitePages/Schwab-main.aspx#nominate-beneficiaries], [Retirement (beneficiaries link near the bottom) | https://nvidia.sharepoint.com/sites/nvinfo/retirement/Pages/US/Contributions-.aspx] and Benefits websites.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I submit an employee referral?",
+        "category": "Closed QA",
+        "ideal_response": "Below are steps to refer someone to a job at NVIDIA.\n\nReview available [jobs | https://wd5.myworkday.com/nvidia/d/task/1422$2712.htmld]\nSelect a position and click the \u201cRefer\u201d button\nEnsure your referral applies using only the link sent from Workday\nIf you haven\u2019t already, make sure to review the [Employee Referral Policy | https://nvidia.sharepoint.com/sites/nvinfo/employeereferrals/Pages/Employee-Referral-Policy.aspx?csf=1&e=pxHtgv&cid=94c29027-8a43-4002-b308-df164b594d4e] for information about the process and how to qualify for a cash bonus.\n\nFor more information, visit the [Employee Referral website | https://nvidia.sharepoint.com/sites/nvinfo/employeereferrals].",
+        "source": ""
+    },
+    {
+        "prompt": "How do I refer someone for a job at NVIDIA?",
+        "category": "Closed QA",
+        "ideal_response": "Below are steps to refer someone to a job at NVIDIA.\n\nReview available [jobs | https://wd5.myworkday.com/nvidia/d/task/1422$2712.htmld]\nSelect a position and click the \u201cRefer\u201d button\nEnsure your referral applies using only the link sent from Workday\nIf you haven\u2019t already, make sure to review the [Employee Referral Policy | https://nvidia.sharepoint.com/sites/nvinfo/employeereferrals/Pages/Employee-Referral-Policy.aspx?csf=1&e=pxHtgv&cid=94c29027-8a43-4002-b308-df164b594d4e] for information about the process and how to qualify for a cash bonus.\n\nFor more information, visit the [Employee Referral website | https://nvidia.sharepoint.com/sites/nvinfo/employeereferrals].",
+        "source": ""
+    },
+    {
+        "prompt": "How do I make a job referral?",
+        "category": "Closed QA",
+        "ideal_response": "Below are steps to refer someone to a job at NVIDIA.\n\nReview available [jobs | https://wd5.myworkday.com/nvidia/d/task/1422$2712.htmld]\nSelect a position and click the \u201cRefer\u201d button\nEnsure your referral applies using only the link sent from Workday\nIf you haven\u2019t already, make sure to review the [Employee Referral Policy | https://nvidia.sharepoint.com/sites/nvinfo/employeereferrals/Pages/Employee-Referral-Policy.aspx?csf=1&e=pxHtgv&cid=94c29027-8a43-4002-b308-df164b594d4e] for information about the process and how to qualify for a cash bonus.\n\nFor more information, visit the [Employee Referral website | https://nvidia.sharepoint.com/sites/nvinfo/employeereferrals].",
+        "source": ""
+    },
+    {
+        "prompt": "When can I enroll in the Employee Stock Purchase Plan (ESPP)?",
+        "category": "Closed QA",
+        "ideal_response": "New Hires: ESPP Open Enrollment begins on your hire date and ends on the last day of the 1st month in which you were hired at 11:59pm (ET). During your first week, you will receive an email from dse_na2@docusign.net which contains a link to your personalized DocuSign enrollment form to complete and sign (keep your receipt). Stock Administration will automatically receive a copy of your completed DocuSign enrollment form. See New Hire Enrollment [FAQ|https://nvidia.sharepoint.com/sites/stock/Shared%20Documents/ESPP/FAQs%20-New%20Hire%20ESPP_Mar2018.pdf]. \n\nExisting Employees & New Hires who missed the 1st month enrollment deadline: Company-wide ESPP Open Enrollment occurs twice a year during the last two weeks in Feb and Aug. During Open Enrollment, enrollments/changes are made directly by employees through their Schwab EAC account. Stock Administration will send out email notifications for ESPP Open Enrollment.\n\nFor more information, visit the\u202fNVINFO [Stock Administration page|https://nvidia.sharepoint.com/sites/stock].",
+        "source": ""
+    },
+    {
+        "prompt": "When can I enroll in ESPP?",
+        "category": "Closed QA",
+        "ideal_response": "New Hires: ESPP Open Enrollment begins on your hire date and ends on the last day of the 1st month in which you were hired at 11:59pm (ET). During your first week, you will receive an email from dse_na2@docusign.net which contains a link to your personalized DocuSign enrollment form to complete and sign (keep your receipt). Stock Administration will automatically receive a copy of your completed DocuSign enrollment form. See New Hire Enrollment [FAQ|https://nvidia.sharepoint.com/sites/stock/Shared%20Documents/ESPP/FAQs%20-New%20Hire%20ESPP_Mar2018.pdf]. \n\nExisting Employees & New Hires who missed the 1st month enrollment deadline: Company-wide ESPP Open Enrollment occurs twice a year during the last two weeks in Feb and Aug. During Open Enrollment, enrollments/changes are made directly by employees through their Schwab EAC account. Stock Administration will send out email notifications for ESPP Open Enrollment.\n\nFor more information, visit the\u202fNVINFO [Stock Administration page|https://nvidia.sharepoint.com/sites/stock].",
+        "source": ""
+    },
+    {
+        "prompt": "How do I request a YubiKey?",
+        "category": "Closed QA",
+        "ideal_response": "To request a new YubiKey, open an NVIDIA Help request [here|https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=933bbfea978af9584649b0d3f153af2b]",
+        "source": ""
+    },
+    {
+        "prompt": "I need a Yubikey",
+        "category": "Closed QA",
+        "ideal_response": "To request a new YubiKey, open an NVIDIA Help request [here|https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=933bbfea978af9584649b0d3f153af2b]",
+        "source": ""
+    },
+    {
+        "prompt": "How can I get a Yubikey?",
+        "category": "Closed QA",
+        "ideal_response": "To request a new YubiKey, open an NVIDIA Help request [here|https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=933bbfea978af9584649b0d3f153af2b]",
+        "source": ""
+    },
+    {
+        "prompt": "How do I reset the yubikey pin?",
+        "category": "Closed QA",
+        "ideal_response": "Download the Yubikey manager app and use it to reset the pin on your yubikey.",
+        "source": ""
+    },
+    {
+        "prompt": "How can I reset the pin on yubikey?",
+        "category": "Closed QA",
+        "ideal_response": "Download the Yubikey manager app and use it to reset the pin on your yubikey.",
+        "source": ""
+    },
+    {
+        "prompt": "How to Join a DL?",
+        "category": "Closed QA",
+        "ideal_response": "You can join a DL by going to the [Dlrequest|http://dlrequest/] application.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I join a dl?",
+        "category": "Closed QA",
+        "ideal_response": "You can join a DL by going to the [Dlrequest|http://dlrequest/] application.",
+        "source": ""
+    },
+    {
+        "prompt": "how do I join a distribution list?",
+        "category": "Closed QA",
+        "ideal_response": "You can join a DL by going to the [Dlrequest|http://dlrequest/] application.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I join an email DL?",
+        "category": "Closed QA",
+        "ideal_response": "You can join a DL by going to the [Dlrequest|http://dlrequest/] application.",
+        "source": ""
+    },
+    {
+        "prompt": "Can I use my Apple Watch to approve sign-in requests? ",
+        "category": "Closed QA",
+        "ideal_response": "Unfortunately you cannot, the \"number matching\" scenario is not supported on Apple Watch therefore you must approve sign-on through your phone.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I change my BitLocker Pin?",
+        "category": "Closed QA",
+        "ideal_response": "To change your BitLocker Pin, navigate to the control panel on your device and in the upper right hand corner, search for \"BitLocker Encryption Options.\" Next, click the Enter key. Select \"Manage your Pin\" then proceed to enter and confirm your new pin.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I connect to VPN on Windows?",
+        "category": "Closed QA",
+        "ideal_response": "",
+        "source": ""
+    },
+    {
+        "prompt": "Can the Microsoft Authenticator app be used for work and personal accounts?",
+        "category": "Closed QA",
+        "ideal_response": "Yes, you can",
+        "source": ""
+    },
+    {
+        "prompt": "Can I use the microsoft authenticator app for personal accounts?",
+        "category": "Closed QA",
+        "ideal_response": "Yes, you can",
+        "source": ""
+    },
+    {
+        "prompt": "Where can I find a list of vpn gateways?",
+        "category": "Closed QA",
+        "ideal_response": "You can find the list of VPN gateways [here|https://ngvpn.nvidia.com/]. Use the one closest to you.",
+        "source": ""
+    },
+    {
+        "prompt": "What VPN gateway should I use?",
+        "category": "Closed QA",
+        "ideal_response": "You can find the list of VPN gateways [here|https://ngvpn.nvidia.com/]. Use the one closest to you.",
+        "source": ""
+    },
+    {
+        "prompt": "Will waiving medical coverage receive me any credit?",
+        "category": "Closed QA",
+        "ideal_response": "Waiving enrollment in a medical plan on the Benefits Enrollment Site, will result in you receiving a $100 monthly credit on your paycheck. Restrictions may apply if you have a spouse, domestic partner, or other eligible family member who is also employed by NVIDIA. ",
+        "source": ""
+    },
+    {
+        "prompt": "How much credit do we get if we waive medical coverage?",
+        "category": "Closed QA",
+        "ideal_response": "Waiving enrollment in a medical plan on the Benefits Enrollment Site, will result in you receiving a $100 monthly credit on your paycheck. Restrictions may apply if you have a spouse, domestic partner, or other eligible family member who is also employed by NVIDIA. ",
+        "source": ""
+    },
+    {
+        "prompt": "How do I change my W-4?",
+        "category": "Closed QA",
+        "ideal_response": "Changes to your W-4 can be made at any time. \n\nLog in to [UKG Pro (formerly UltiPro)| https://nvidia.ultipro.com/]>Modify W-4 and State Tax>Things I Can Do>Add/Change Withholding Form (W-4). \n\nFor additional information, visit the\u202fNVINFO [Payroll site|https://nvidia.sharepoint.com/sites/nvinfo/payroll/Pages/default.aspx]. ",
+        "source": ""
+    },
+    {
+        "prompt": "How do I change the tax witholding on my paycheck?",
+        "category": "Closed QA",
+        "ideal_response": "Changes to your W-4 can be made at any time. \n\nLog in to [UKG Pro (formerly UltiPro)| https://nvidia.ultipro.com/]>Modify W-4 and State Tax>Things I Can Do>Add/Change Withholding Form (W-4). \n\nFor additional information, visit the\u202fNVINFO [Payroll site|https://nvidia.sharepoint.com/sites/nvinfo/payroll/Pages/default.aspx]. ",
+        "source": ""
+    },
+    {
+        "prompt": "How can I change the tax witholding?",
+        "category": "Closed QA",
+        "ideal_response": "Changes to your W-4 can be made at any time. \n\nLog in to [UKG Pro (formerly UltiPro)| https://nvidia.ultipro.com/]>Modify W-4 and State Tax>Things I Can Do>Add/Change Withholding Form (W-4). \n\nFor additional information, visit the\u202fNVINFO [Payroll site|https://nvidia.sharepoint.com/sites/nvinfo/payroll/Pages/default.aspx]. ",
+        "source": ""
+    },
+    {
+        "prompt": "How do would I know if I am subject to trading restriction periods?",
+        "category": "Closed QA",
+        "ideal_response": "Within NVIDIA, during certain periods, specific individuals are blocked from trading. Employees are subject to the restriction periods if they work under the Designated Individuals List posted on the Stock Administration page.\n\nIf you want to check if you are affected, log on to Workday > Job & Pay, then view quick guide with instructions.\n\nVisit the\u202fNVINFO Stock Administration\u202fpage for more information.",
+        "source": ""
+    },
+    {
+        "prompt": "Are we subject to stock trading restriction?",
+        "category": "Closed QA",
+        "ideal_response": "Within NVIDIA, during certain periods, specific individuals are blocked from trading. Employees are subject to the restriction periods if they work under the Designated Individuals List posted on the Stock Administration page.\n\nIf you want to check if you are affected, log on to Workday > Job & Pay, then view quick guide with instructions.\n\nVisit the\u202fNVINFO Stock Administration\u202fpage for more information.",
+        "source": ""
+    },
+    {
+        "prompt": "How can I request a new or extra Flexible Spending Account debit card?",
+        "category": "Closed QA",
+        "ideal_response": "To request a new card or a card for your dependents, contact HealthEquity/WageWorks at 1-877-924-3967 or log in to the Benefits Enrollment Site. Go to My WageWorks account>card services. \n\nFor more information about FSA accounts, visit the NVIDIA benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "I need a new debit card for FSA",
+        "category": "Closed QA",
+        "ideal_response": "To request a new card or a card for your dependents, contact HealthEquity/WageWorks at 1-877-924-3967 or log in to the Benefits Enrollment Site. Go to My WageWorks account>card services. \n\nFor more information about FSA accounts, visit the NVIDIA benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "How can I get a new FSA debit card?",
+        "category": "Closed QA",
+        "ideal_response": "To request a new card or a card for your dependents, contact HealthEquity/WageWorks at 1-877-924-3967 or log in to the Benefits Enrollment Site. Go to My WageWorks account>card services. \n\nFor more information about FSA accounts, visit the NVIDIA benefits website.",
+        "source": ""
+    },
+    {
+        "prompt": "I need an employment verification letter",
+        "category": "Closed QA",
+        "ideal_response": "To request an employment verification letter, Navigate to Workday and click on \"My Job and Pay\". Under \"Actions\", select \"Request a Letter\". After submitting, you can find your letter in the \"My Reports\" section or by clicking on the bell icon in the upper right of your screen. ",
+        "source": ""
+    },
+    {
+        "prompt": "how do I get an employment verification letter?",
+        "category": "Closed QA",
+        "ideal_response": "To request an employment verification letter, Navigate to Workday and click on \"My Job and Pay\". Under \"Actions\", select \"Request a Letter\". After submitting, you can find your letter in the \"My Reports\" section or by clicking on the bell icon in the upper right of your screen. ",
+        "source": ""
+    },
+    {
+        "prompt": "How can I contact IT help via email?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact NVIDIA Help by sending an email to\u00a0nvidia@service-now.com.",
+        "source": ""
+    },
+    {
+        "prompt": "How can I contact IT via email?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact NVIDIA Help by sending an email to\u00a0nvidia@service-now.com.",
+        "source": ""
+    },
+    {
+        "prompt": "When can I increase my ESPP rate?",
+        "category": "Closed QA",
+        "ideal_response": "You can increase your ESPP rate during the ESPP Open Enrollment periods which occurs in the last two weeks of February and August.",
+        "source": ""
+    },
+    {
+        "prompt": "When can I change my ESPP contribution?",
+        "category": "Closed QA",
+        "ideal_response": "You can increase your ESPP rate during the ESPP Open Enrollment periods which occurs in the last two weeks of February and August.",
+        "source": ""
+    },
+    {
+        "prompt": "Am I able to access my work computer and emails while on a Leave of Absence?",
+        "category": "Closed QA",
+        "ideal_response": "While on an approved Leave of Absence you are not authorized to work for the specified duration of your leave. All access to NVIDIA systems and networks, including building access using your name badge, will be disabled upon the start of your LOA. During this time, you are not expected to continue any kind of work, including accessing your e-mails.",
+        "source": ""
+    },
+    {
+        "prompt": "Can I access email while on leave of absense?",
+        "category": "Closed QA",
+        "ideal_response": "While on an approved Leave of Absence you are not authorized to work for the specified duration of your leave. All access to NVIDIA systems and networks, including building access using your name badge, will be disabled upon the start of your LOA. During this time, you are not expected to continue any kind of work, including accessing your e-mails.",
+        "source": ""
+    },
+    {
+        "prompt": "I am on Ubuntu OS and trying to install Slack. Where can I find instructions to do this?",
+        "category": "Closed QA",
+        "ideal_response": "You can install slack on ubuntu via the ubuntu software app.",
+        "source": ""
+    },
+    {
+        "prompt": "How can I install Slack on ubuntu?",
+        "category": "Closed QA",
+        "ideal_response": "You can install slack on ubuntu via the ubuntu software app.",
+        "source": ""
+    },
+    {
+        "prompt": "My outlook is slow",
+        "category": "Closed QA",
+        "ideal_response": "Sorry to hear that. There is an article that will help you resolve problems with outlook.",
+        "source": ""
+    },
+    {
+        "prompt": "My outlook is having problems",
+        "category": "Closed QA",
+        "ideal_response": "Sorry to hear that. There is an article that will help you resolve problems with outlook.",
+        "source": ""
+    },
+    {
+        "prompt": "Where can my employee stock purchase plan (ESPP) subscription date be found?  ",
+        "category": "Closed QA",
+        "ideal_response": "To find your ESPP (employee stock purchase plan) subscription details, log on to Workday > \u201cMy Job & Pay\u201d and then scroll down. The box below \"Current Equity Data\" displays your ESPP subscription date, ESPP subscription price (USD), and ESPP subscription percentage.\n\nFor more information, visit the\u202fNVINFO Stock Administration\u202fpage. ",
+        "source": ""
+    },
+    {
+        "prompt": "Where can I find the ESPP subscription date?",
+        "category": "Closed QA",
+        "ideal_response": "To find your ESPP (employee stock purchase plan) subscription details, log on to Workday > \u201cMy Job & Pay\u201d and then scroll down. The box below \"Current Equity Data\" displays your ESPP subscription date, ESPP subscription price (USD), and ESPP subscription percentage.\n\nFor more information, visit the\u202fNVINFO Stock Administration\u202fpage. ",
+        "source": ""
+    },
+    {
+        "prompt": "If prompted to enter a Bitlocker Recovery Key, what should I do?",
+        "category": "Closed QA",
+        "ideal_response": "From a separate device (computer or mobile phone) go to https://myaccount.microsoft.com and click Devices. Select your computer, then click View Bitlocker Keys. IT can also help look this up for you.\n\nTo avoid needing to enter a recovery key, avoid making changes to BIOS or boot settings without suspending Bitlocker protection first. You can suspend Bitlocker protection by following these instructions from Microsoft. When you resume protection, any new BIOS and boot settings will be saved and won\u2019t cause you to need your recovery key.",
+        "source": ""
+    },
+    {
+        "prompt": "What is the bitlocker recovery key?",
+        "category": "Closed QA",
+        "ideal_response": "From a separate device (computer or mobile phone) go to https://myaccount.microsoft.com and click Devices. Select your computer, then click View Bitlocker Keys. IT can also help look this up for you.\n\nTo avoid needing to enter a recovery key, avoid making changes to BIOS or boot settings without suspending Bitlocker protection first. You can suspend Bitlocker protection by following these instructions from Microsoft. When you resume protection, any new BIOS and boot settings will be saved and won\u2019t cause you to need your recovery key.",
+        "source": ""
+    },
+    {
+        "prompt": "I'm getting prompted to enter a bitlocker recovery key on my pc",
+        "category": "Closed QA",
+        "ideal_response": "From a separate device (computer or mobile phone) go to https://myaccount.microsoft.com and click Devices. Select your computer, then click View Bitlocker Keys. IT can also help look this up for you.\n\nTo avoid needing to enter a recovery key, avoid making changes to BIOS or boot settings without suspending Bitlocker protection first. You can suspend Bitlocker protection by following these instructions from Microsoft. When you resume protection, any new BIOS and boot settings will be saved and won\u2019t cause you to need your recovery key.",
+        "source": ""
+    },
+    {
+        "prompt": "How can I recover my BitLocker PIN if I have forgotten it?",
+        "category": "Closed QA",
+        "ideal_response": "Contact NVIDIA IT. NVIDIA IT is committed to employee privacy and only uses the recovery key when required. In case of a forgotten BitLocker PIN, a system failure, or an event such as employee termination or extended medical leave, there is a controlled list of technicians who have access to recover the encrypted data. NVIDIA IT does not directly store BitLocker PIN \u2013 they store a secure recovery key that can only be used on that specific machine.",
+        "source": ""
+    },
+    {
+        "prompt": "how do I recover my bitlocker pin",
+        "category": "Closed QA",
+        "ideal_response": "Contact NVIDIA IT. NVIDIA IT is committed to employee privacy and only uses the recovery key when required. In case of a forgotten BitLocker PIN, a system failure, or an event such as employee termination or extended medical leave, there is a controlled list of technicians who have access to recover the encrypted data. NVIDIA IT does not directly store BitLocker PIN \u2013 they store a secure recovery key that can only be used on that specific machine.",
+        "source": ""
+    },
+    {
+        "prompt": "I forgot my bitlocker pin",
+        "category": "Closed QA",
+        "ideal_response": "Contact NVIDIA IT. NVIDIA IT is committed to employee privacy and only uses the recovery key when required. In case of a forgotten BitLocker PIN, a system failure, or an event such as employee termination or extended medical leave, there is a controlled list of technicians who have access to recover the encrypted data. NVIDIA IT does not directly store BitLocker PIN \u2013 they store a secure recovery key that can only be used on that specific machine.",
+        "source": ""
+    },
+    {
+        "prompt": "What is the contact for Physical Security/Badging Access?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact badging@nvidia.com or 408-486-4005 for additional assistance.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I contact the badging office?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact badging@nvidia.com or 408-486-4005 for additional assistance.",
+        "source": ""
+    },
+    {
+        "prompt": "How can I contact building security?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact badging@nvidia.com or 408-486-4005 for additional assistance.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I request a DL?",
+        "category": "Closed QA",
+        "ideal_response": "You can request to use a DL with the following https://dlrequest.nvidia.com. Please check the DL description for special instructions.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I create a DL?",
+        "category": "Closed QA",
+        "ideal_response": "You can request to use a DL with the following https://dlrequest.nvidia.com. Please check the DL description for special instructions.",
+        "source": ""
+    },
+    {
+        "prompt": "I need a new VM",
+        "category": "Closed QA",
+        "ideal_response": "You can request a new VM on https://itss.nvidia.com/vm/create",
+        "source": ""
+    },
+    {
+        "prompt": "I need a linux vm",
+        "category": "Closed QA",
+        "ideal_response": "You can request a new VM on https://itss.nvidia.com/vm/create",
+        "source": ""
+    },
+    {
+        "prompt": "how do I request a new VM?",
+        "category": "Closed QA",
+        "ideal_response": "You can request a new VM on https://itss.nvidia.com/vm/create",
+        "source": ""
+    },
+    {
+        "prompt": "How can I get a new mouse?",
+        "category": "Closed QA",
+        "ideal_response": "Computer Accessories can be requested [here| https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=43f82e7d97fc1590275ef7300153af21#mcetoc_1g2r6ku52m]",
+        "source": ""
+    },
+    {
+        "prompt": "I need a new mouse",
+        "category": "Closed QA",
+        "ideal_response": "Computer Accessories can be requested [here| https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=43f82e7d97fc1590275ef7300153af21#mcetoc_1g2r6ku52m]",
+        "source": ""
+    },
+    {
+        "prompt": "I need a mouse",
+        "category": "Closed QA",
+        "ideal_response": "Computer Accessories can be requested [here| https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=43f82e7d97fc1590275ef7300153af21#mcetoc_1g2r6ku52m]",
+        "source": ""
+    },
+    {
+        "prompt": "I need a docking station",
+        "category": "Closed QA",
+        "ideal_response": "Computer Accessories can be requested [here| https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=43f82e7d97fc1590275ef7300153af21#mcetoc_1g2r6ku52m]",
+        "source": ""
+    },
+    {
+        "prompt": "how do I get a docking station?",
+        "category": "Closed QA",
+        "ideal_response": "Computer Accessories can be requested [here| https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=43f82e7d97fc1590275ef7300153af21#mcetoc_1g2r6ku52m]",
+        "source": ""
+    },
+    {
+        "prompt": "I need a new keyboard",
+        "category": "Closed QA",
+        "ideal_response": "Computer Accessories can be requested [here| https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=43f82e7d97fc1590275ef7300153af21#mcetoc_1g2r6ku52m]",
+        "source": ""
+    },
+    {
+        "prompt": "How can I get a new headset",
+        "category": "Closed QA",
+        "ideal_response": "Computer Accessories can be requested [here| https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=43f82e7d97fc1590275ef7300153af21#mcetoc_1g2r6ku52m]",
+        "source": ""
+    },
+    {
+        "prompt": "I need a headset",
+        "category": "Closed QA",
+        "ideal_response": "Computer Accessories can be requested [here| https://nvidia.service-now.com/esc?id=sc_cat_item&table=sc_cat_item&sys_id=43f82e7d97fc1590275ef7300153af21#mcetoc_1g2r6ku52m]",
+        "source": ""
+    },
+    {
+        "prompt": "How do I return my laptop to NVIDIA?",
+        "category": "Closed QA",
+        "ideal_response": "For local users working in-office, NVIDIA-issued equipment can be dropped off at the closest IT Tech Lounge during regular working hours.\n\nFor remote users, NVIDIA-issued equipment that is no longer needed must be dropped off at your local FedEx store by using NVIDIA's FedEx Acct# 686-071-871 (US only). Please provide the account number, labelling and packaging will be covered at no cost to you.\n\nShip to:\n\nNVIDIA\nAttn: Anna Yin\n2530 Zanker Road\nSan Jose, CA 95131\n\nNOTE: The FedEx account cannot be used on the website.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I return NVIDIA IT equipment?",
+        "category": "Closed QA",
+        "ideal_response": "For local users working in-office, NVIDIA-issued equipment can be dropped off at the closest IT Tech Lounge during regular working hours.\n\nFor remote users, NVIDIA-issued equipment that is no longer needed must be dropped off at your local FedEx store by using NVIDIA's FedEx Acct# 686-071-871 (US only). Please provide the account number, labelling and packaging will be covered at no cost to you.\n\nShip to:\n\nNVIDIA\nAttn: Anna Yin\n2530 Zanker Road\nSan Jose, CA 95131\n\nNOTE: The FedEx account cannot be used on the website.",
+        "source": ""
+    },
+    {
+        "prompt": "How do I return equipment to IT?",
+        "category": "Closed QA",
+        "ideal_response": "For local users working in-office, NVIDIA-issued equipment can be dropped off at the closest IT Tech Lounge during regular working hours.\n\nFor remote users, NVIDIA-issued equipment that is no longer needed must be dropped off at your local FedEx store by using NVIDIA's FedEx Acct# 686-071-871 (US only). Please provide the account number, labelling and packaging will be covered at no cost to you.\n\nShip to:\n\nNVIDIA\nAttn: Anna Yin\n2530 Zanker Road\nSan Jose, CA 95131\n\nNOTE: The FedEx account cannot be used on the website.",
+        "source": ""
+    },
+    {
+        "prompt": "Where are IT Green Machines located?",
+        "category": "Closed QA",
+        "ideal_response": "IT Green Machines are located in many of our global offices and strategically placed in high traffic areas.\n\nLocations:\n\nSanta Clara locations: Bldg. A 1st Floor, Bldg. R 1st Floor, Endeavor 1st / 2nd floor and Voyager 2nd / 3rd floor.\nAustin\nRedmond\nPune\nBangalore\nHyderabad\nShanghai\nBeijing\nShenzhen\nTaipei",
+        "source": ""
+    },
+    {
+        "prompt": "How can I find IT green machines?",
+        "category": "Closed QA",
+        "ideal_response": "IT Green Machines are located in many of our global offices and strategically placed in high traffic areas.\n\nLocations:\n\nSanta Clara locations: Bldg. A 1st Floor, Bldg. R 1st Floor, Endeavor 1st / 2nd floor and Voyager 2nd / 3rd floor.\nAustin\nRedmond\nPune\nBangalore\nHyderabad\nShanghai\nBeijing\nShenzhen\nTaipei",
+        "source": ""
+    },
+    {
+        "prompt": "where are the green machines?",
+        "category": "Closed QA",
+        "ideal_response": "IT Green Machines are located in many of our global offices and strategically placed in high traffic areas.\n\nLocations:\n\nSanta Clara locations: Bldg. A 1st Floor, Bldg. R 1st Floor, Endeavor 1st / 2nd floor and Voyager 2nd / 3rd floor.\nAustin\nRedmond\nPune\nBangalore\nHyderabad\nShanghai\nBeijing\nShenzhen\nTaipei",
+        "source": ""
+    },
+    {
+        "prompt": "How do I access email on the web?",
+        "category": "Closed QA",
+        "ideal_response": "You can log into to view email on the web at https://outlook.office.com ",
+        "source": ""
+    },
+    {
+        "prompt": "how do I access email from a web browser?",
+        "category": "Closed QA",
+        "ideal_response": "You can log into to view email on the web at https://outlook.office.com ",
+        "source": ""
+    },
+    {
+        "prompt": "How can I access outlook using a web browser?",
+        "category": "Closed QA",
+        "ideal_response": "You can log into to view email on the web at https://outlook.office.com ",
+        "source": ""
+    },
+    {
+        "prompt": "What is the attachment size limit for outlook?",
+        "category": "Closed QA",
+        "ideal_response": "The size limit for attachments is restricted to 35MB",
+        "source": ""
+    },
+    {
+        "prompt": "what is the limit attachment size limit for email?",
+        "category": "Closed QA",
+        "ideal_response": "The size limit for attachments is restricted to 35MB",
+        "source": ""
+    },
+    {
+        "prompt": "Who is my HRBP?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "who is my hrbp?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "who is my hr business partner?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "who is my HR business partner?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "who is the head of hr?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "Who is the head of HR?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "who is the head of IT?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "who is the head of finance?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "Who is the head of the IT department?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "who is the head of finance department?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "who is the head of HR department?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "Who is the head of the HR department?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "Who is my IT contact?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "whois my HR contact?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "Who is my hr contact?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "when is the next india holiday?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "When is the next holiday in India?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "Are we allowed to talk to the press?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "Can I talk to a journalist?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "can we talk to the press?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "what is our policy on talking with journalists?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "what is our policy on talking with the press?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "Can I talk to a reporter?",
+        "category": "Closed QA",
+        "ideal_response": "No answer. There is no knowledge.",
+        "source": ""
+    },
+    {
+        "prompt": "How can I contact HR?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact HR here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=27c78de49f331200d9011977677fcfb3",
+        "source": ""
+    },
+    {
+        "prompt": "How to I report an HR issue?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact HR here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=27c78de49f331200d9011977677fcfb3",
+        "source": ""
+    },
+    {
+        "prompt": "I have a general HR question",
+        "category": "Closed QA",
+        "ideal_response": "You can contact HR here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=27c78de49f331200d9011977677fcfb3",
+        "source": ""
+    },
+    {
+        "prompt": "I'd like to report an HR issue",
+        "category": "Closed QA",
+        "ideal_response": "You can contact HR here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=27c78de49f331200d9011977677fcfb3",
+        "source": ""
+    },
+    {
+        "prompt": "I need to report an HR problem",
+        "category": "Closed QA",
+        "ideal_response": "You can contact HR here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=27c78de49f331200d9011977677fcfb3",
+        "source": ""
+    },
+    {
+        "prompt": "I have an HR question",
+        "category": "Closed QA",
+        "ideal_response": "You can contact the HR benefits team here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=1bc78de49f331200d9011977677fcfae",
+        "source": ""
+    },
+    {
+        "prompt": "I have a question for the benefits team",
+        "category": "Closed QA",
+        "ideal_response": "You can contact the HR benefits team here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=1bc78de49f331200d9011977677fcfae",
+        "source": ""
+    },
+    {
+        "prompt": "how do I contact the benefits team?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact the HR benefits team here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=1bc78de49f331200d9011977677fcfae",
+        "source": ""
+    },
+    {
+        "prompt": "I have a payroll question",
+        "category": "Closed QA",
+        "ideal_response": "You can contact the HR payroll team here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=655fb0c81b501d10e98e993f034bcbb2",
+        "source": ""
+    },
+    {
+        "prompt": "I have a question for payroll",
+        "category": "Closed QA",
+        "ideal_response": "You can contact the HR payroll team here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=655fb0c81b501d10e98e993f034bcbb2",
+        "source": ""
+    },
+    {
+        "prompt": "how do I report a payroll issue?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact the HR payroll team here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=655fb0c81b501d10e98e993f034bcbb2",
+        "source": ""
+    },
+    {
+        "prompt": "I have a payroll question",
+        "category": "Closed QA",
+        "ideal_response": "You can contact the HR payroll team here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=655fb0c81b501d10e98e993f034bcbb2",
+        "source": ""
+    },
+    {
+        "prompt": "how to creat hr ticket?",
+        "category": "Closed QA",
+        "ideal_response": "You can contact HR here: https://nvidia.service-now.com/esc?id=sc_cat_item&sys_id=27c78de49f331200d9011977677fcfb3",
+        "source": ""
+    }
+]

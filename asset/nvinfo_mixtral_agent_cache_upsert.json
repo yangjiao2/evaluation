@@ -1,0 +1,47 @@
+{
+  "RegressionSchema": {
+    "Notification": {
+      "EmailRecipients": [
+        "yangj@nvidia.com", "lua@nvidia.com"
+      ]
+    },
+    "DatasetConfig": {
+      "Engine": "s3",
+      "DatasetFolder": "nvinfo_mixtral_agent",
+      "Name": "nvinfo_mixtral_agent",
+      "DatasetPath": "cache_upsert/nvinfo_cache_13query_inlinecitation.xlsx"
+    },
+    "RunConfig": {
+      "Inputs": [
+        {
+          "name": "",
+          "type": "Attribute",
+          "value": ""
+        },
+        {
+          "name": "",
+          "type": "Function",
+          "value": "service_library.run.parser_library.input_parser.generate_orchestrator_fulfillment_request",
+          "args": [
+            "Query"
+          ]
+        }
+      ],
+      "Outputs": [
+        {
+          "name": "Response",
+          "type": "Attribute",
+          "value": ""
+        },
+        {
+          "name": "Response",
+          "type": "Function",
+          "value": "service_library.run.parser_library.response_parser.get_orchestrator_response",
+          "args": [
+            "Response"
+          ]
+        }
+      ]
+    }
+  }
+}

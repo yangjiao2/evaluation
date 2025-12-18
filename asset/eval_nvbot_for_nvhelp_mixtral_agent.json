@@ -1,0 +1,119 @@
+{
+  "EvaluationSchema": {
+    "Notification": {
+      "EmailRecipients": [
+        "yangj@nvidia.com"
+      ]
+    },
+    "NemoEvaluator": {
+      "DatasetConfig": {
+        "Engine": "Datastore",
+        "Name": "nvhelp_evaluation-llm_as_a_judge-0731-1732-tdX",
+        "DatasetId": "dataset-LwjLSTw6rbfiW3gnhCg9YJ",
+        "DatasetFolder": "nvhelp_evaluation-llm_as_a_judge-0731-1732-tdX",
+        "Files": [
+          "dataset.xlsx",
+          "judge_prompt_parameters/correct_answer.jsonl",
+          "judge_prompt_parameters/empathy_expected.jsonl",
+          "judge_prompt_parameters/helpfulness_criteria.jsonl",
+          "judge_prompt_parameters/required_citations.jsonl",
+          "judge_prompt_parameters/short_answer_expected.jsonl",
+          "judge_prompts.jsonl",
+          "question.jsonl",
+          "reference_answer/reference.jsonl"
+        ]
+      },
+      "Evaluators": [
+        {
+          "name": "llm_evaluation",
+          "column_map": {
+            "question": "Query",
+            "reference": "Correct Answer",
+            "answer": "Text",
+            "category": "Category",
+            "additional_params": [
+              "Required Citations",
+              "Helpfulness Criteria",
+              "Empathy Expected",
+              "Short Answer Expected"
+            ]
+          },
+          "model": {
+            "llm_name": "mixtral-8x22b"
+          },
+          "evaluator_payload": {
+            "eval_type": "llm_as_a_judge",
+            "eval_subtype": "mtbench",
+            "mode": "single",
+            "judge_inference_params": {
+              "top_p": 0.1,
+              "top_k": 40,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 600
+            },
+            "inference_params": {
+              "top_p": 0.75,
+              "top_k": 0,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 25,
+              "extra_body": {
+                "project_id": 1,
+                "env": "stg"
+              }
+            }
+          },
+          "judge_config": {
+            "prompt_module": "eval_prompt_library.metrics_eval_prompt.MetricsEvaluationPrompt",
+            "output_format": "output_format",
+            "template": "eval_template_v2",
+            "scorers": [
+              "Correctness Answer",
+              "Helpfulness",
+              "Empathy",
+              "Conciseness"
+            ],
+            "parse_keys": [
+              "Explanation"
+            ]
+          }
+        },
+        {
+          "name": "custom_evaluation",
+          "column_map": {
+            "question": "Question",
+            "reference": "Reference",
+            "answer": "Answer",
+            "request_params_override": {}
+          },
+          "model": {
+            "llm_name": "gpt-43b-905"
+          },
+          "evaluator_payload": {
+            "eval_type": "automatic",
+            "eval_subtype": "custom_eval",
+            "input_file": "",
+            "inference_configs": [
+              {
+                "inference_params": {
+                  "tokens_to_generate": 600,
+                  "temperature": 0,
+                  "top_k": 1
+                }
+              }
+            ],
+            "scorers": [
+              "accuracy",
+              "bleu",
+              "rouge",
+              "em",
+              "f1",
+              "bert"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

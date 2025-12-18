@@ -1,0 +1,75 @@
+{
+  "EvaluationSchema": {
+    "Notification": {
+      "EmailRecipients": [
+        "yangj@nvidia.com"
+      ]
+    },
+    "NemoEvaluator": {
+      "DatasetConfig": {
+        "Engine": "Datastore",
+        "Name": "nvbot-full-judge",
+        "DatasetId": "dataset-HaCynxSt6j4BYcreEnLehA",
+        "DatasetFolder": "nvbot-205-queries",
+        "Files": [
+          "judge_prompts.jsonl",
+          "question.jsonl",
+          "reference_answer/reference.jsonl"
+        ]
+      },
+      "Evaluators": [
+        {
+          "name": "llm_evaluation",
+          "column_map": {
+            "question": "Query",
+            "reference": "Correct Answer",
+            "answer": "Text",
+            "category": "Category",
+            "additional_params": [
+              "Required Citations",
+              "Helpfulness Criteria",
+              "Empathy Expected",
+              "Short Answer Expected"
+            ]
+          },
+          "model": {
+            "llm_name": "mixtral-8x7b"
+          },
+          "evaluator_payload": {
+            "eval_type": "llm_as_a_judge",
+            "eval_subtype": "mtbench",
+            "mode": "single",
+            "judge_inference_params": {
+              "top_p": 0.9,
+              "top_k": 1,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 250
+            },
+            "inference_params": {
+              "top_p": 0.75,
+              "top_k": 0,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 25,
+              "extra_body": {
+                "project_id": 1
+              }
+            }
+          },
+          "judge_config": {
+            "prompt_module": "eval_prompt_library.metrics_eval_prompt.MetricsEvaluationPrompt",
+            "output_format": "output_format",
+            "template": "eval_template_v2",
+            "scorers": [
+              "Correctness Answer",
+              "Helpfulness",
+              "Empathy",
+              "Conciseness"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

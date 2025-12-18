@@ -1,0 +1,58 @@
+{
+  "ComparisonSchema": {
+    "DataConfigs": {
+      "column_map": {
+        "question": "Query",
+        "reference": "Correct Answer",
+        "category": "Source",
+        "response": "Response",
+        "scorers": ["Correctness Answer", "Helpfulness"],
+        "additional_params": [
+          "Required Citations"
+        ]
+      }
+    },
+    "Notification": {
+      "EmailRecipients": [
+        "yangj@nvidia.com"
+      ]
+    },
+    "DatasetConfigs": [
+    ],
+    "Comparator": [
+      {
+        "columnName": "Response",
+        "outputName": "Response Outlier",
+        "method": "bert",
+        "threshold": 0.7
+      }
+    ],
+    "CustomEvaluator": {
+      "Evaluators": [
+        {
+          "columns": [
+            "Chat History Query",
+            "Rephrased query",
+            "Ranked IR Chunks",
+            "Response"
+          ],
+          "scorers": [
+            "bert"
+          ],
+          "threshold": 0.7
+        },
+        {
+          "columns": [
+            "Pre-facto experts"
+          ],
+          "scorers": [
+            "em"
+          ]
+        }
+      ],
+      "DatasetConfig": {
+        "Engine": ""
+      }
+    }
+  }
+}

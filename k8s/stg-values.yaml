@@ -1,0 +1,14 @@
+image:
+  tag: stg-{VERSION}
+
+env: stg
+replicaCount: 1
+
+ingress:
+  certificateARN: arn:aws:acm:us-west-2:507125957989:certificate/ce780601-e26d-4dd9-813d-a5ec14ff7123
+  groupName: stg-api
+  loadBalancerName: a-us-west-2-nvbot-stg-api
+
+hpa:
+  maxReplicas: 3
+  minReplicas: 1

@@ -1,0 +1,14 @@
+image:
+  tag: dev-{VERSION}
+
+env: dev
+replicaCount: 2
+
+ingress:
+  certificateARN: arn:aws:acm:us-west-2:507125957989:certificate/a45caa7f-6a41-44f9-94b2-81aba6cbcc25
+  groupName: dev-api
+  loadBalancerName: a-us-west-2-nvbot-dev-api
+
+hpa:
+  maxReplicas: 20
+  minReplicas: 2

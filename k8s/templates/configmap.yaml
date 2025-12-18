@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "app.name" . }}-configmap-{{ .Values.env }}
+  namespace: {{ .Values.namespace }}-{{ .Values.env }}
+data:
+  NV_VAULT_ADDR: {{ .Values.configMapData.NV_VAULT_ADDR }}
+  ENV: {{ .Values.env }}
+  DD_LOGS_INJECTION: {{ .Values.DD_LOGS_INJECTION | quote }}
+  DD_PROFILING_ENABLED: {{ .Values.DD_PROFILING_ENABLED | quote }}

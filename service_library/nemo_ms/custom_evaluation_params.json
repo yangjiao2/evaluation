@@ -1,0 +1,26 @@
+ {
+    "model": {
+        "llm_type": "nvidia-nemo-nim",
+        "llm_name": "nv-gpt-8b-base",
+        "inference_url": "http://gpt-8b-nemollm-inference.nemo-evaluation.svc.cluster.local:8006/v1",
+        "is_chat_model": false
+    },
+    "evaluations": [
+        {
+            "eval_type": "automatic",
+            "eval_subtype": "custom_eval",
+            "input_file": "nds:nvbot_for_nvhelp_mixtral_agent_sample/input.jsonl",
+            "inference_configs": [
+                {
+                    "model": {
+                        "llm_name": "my-model"
+                    },
+                    "run_inference": "False",
+                    "output_file": "nds:nvbot_for_nvhelp_mixtral_agent_sample/output.jsonl"
+                }
+            ],
+            "num_of_samples": 2,
+            "scorers": ["accuracy", "bleu", "rouge", "em", "f1"]
+        }
+    ]
+}

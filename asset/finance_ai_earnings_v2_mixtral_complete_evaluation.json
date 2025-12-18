@@ -1,0 +1,126 @@
+{
+  "EvaluationSchema": {
+    "Notification": {
+      "EmailRecipients": []
+    },
+    "NemoEvaluator": {
+      "Evaluators": [
+        {
+          "name": "llm_evaluation",
+          "column_map": {
+            "question": "Query",
+            "reference": "Correct Answer",
+            "answer": "Response",
+            "category": "Category",
+            "additional_params": [
+              "Correct Answer"
+            ]
+          },
+          "model": {
+            "llm_name": "mixtral-8x22b"
+          },
+          "evaluator_payload": {
+            "eval_type": "llm_as_a_judge",
+            "eval_subtype": "mtbench",
+            "mode": "single",
+            "judge_inference_params": {
+              "top_p": 0.1,
+              "top_k": 40,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 6000
+            },
+            "inference_params": {
+              "top_p": 0.75,
+              "top_k": 0,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 25,
+              "extra_body": {
+              }
+            }
+          },
+          "judge_config": {
+            "prompt_module": "eval_prompt_library.metrics_eval_prompt.MetricsEvaluationPrompt",
+            "output_format": "output_format",
+            "template": "eval_template",
+            "scorers": [
+              "Correctness Answer"
+            ],
+            "parse_keys": [
+              "Explanation"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "RegressionSchema": {
+    "DatasetConfig": {
+      "Engine": "s3",
+      "Name": "finance_ai_earnings_v2_mixtral",
+      "DatasetPath": "dataset/ai_earnings.xlsx"
+    },
+    "RunConfig": {
+      "Inputs": [
+        {
+          "name": "",
+          "type": "Attribute",
+          "value": ""
+        },
+        {
+          "name": "",
+          "type": "Function",
+          "value": "service_library.run.parser_library.input_parser.generate_fulfillment_request",
+          "args": [
+            "Query",
+            "Category"
+          ]
+        }
+      ],
+      "Outputs": [
+        {
+          "name": "Response",
+          "type": "Attribute",
+          "value": "Response.Json.Text.text"
+        },
+        {
+          "name": "Response",
+          "type": "Function",
+          "value": "service_library.run.parser_library.response_parser.expert_streaming_output_parser",
+          "args": [
+            "Response"
+          ]
+        },
+        {
+          "name": "AgentAction",
+          "type": "Attribute",
+          "value": "Response.CleanedText"
+        },
+        {
+          "name": "Tool",
+          "type": "Function",
+          "value": "service_library.run.parser_library.response_parser.extract_tool",
+          "args": [
+            "AgentAction"
+          ]
+        },
+        {
+          "name": "Tool Input",
+          "type": "Function",
+          "value": "service_library.run.parser_library.response_parser.extract_tool_input",
+          "args": [
+            "AgentAction"
+          ]
+        },
+        {
+          "type": "Function",
+          "value": "service_library.run.parser_library.response_parser.response_citation_parser",
+          "args": [
+            "Response"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,220 @@
+{
+  "EvaluationSchema": {
+    "Notification": {
+      "EmailRecipients": [
+        "yangj@nvidia.com"
+      ]
+    },
+    "NemoEvaluator": {
+      "DatasetConfig": {
+        "Engine": "local"
+      },
+      "Evaluators": [
+        {
+          "name": "custom_evaluation",
+          "column_map": {
+            "question": "Query",
+            "reference": "Correct Answer",
+            "answer": "Response"
+          },
+          "model": {
+            "llm_name": "llama-3.2-3b-instruct"
+          },
+          "evaluator_payload": {
+            "eval_type": "automatic",
+            "eval_subtype": "custom_eval",
+            "input_file": "",
+            "inference_configs": [
+              {
+                "run_inference": false,
+                "inference_params": {
+                  "tokens_to_generate": 600,
+                  "temperature": 0,
+                  "top_k": 1
+                }
+              }
+            ],
+            "num_of_samples": -1,
+            "scorers": [
+              "bleu",
+              "rouge",
+              "f1",
+              "bert"
+            ]
+          }
+        },
+        {
+          "name": "llm_evaluation",
+          "column_map": {
+            "question": "Query",
+            "reference": "Correct Answer",
+            "answer": "Response",
+            "category": "Source",
+            "additional_params": [
+              "Correct Answer",
+              "Required Citations"
+            ]
+          },
+          "model": {
+            "llm_name": "mistralai/mixtral-8x22b-instruct-v0.1"
+          },
+          "evaluator_payload": {
+            "eval_type": "llm_as_a_judge",
+            "eval_subtype": "mtbench",
+            "mode": "single",
+            "judge_inference_params": {
+              "top_p": 0.1,
+              "top_k": 40,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 600
+            },
+            "inference_params": {
+              "tokens_to_generate": 600,
+              "temperature": 0,
+              "top_k": 1,
+              "top_p": 0.75,
+              "stop": [],
+              "extra_body": {
+                "project_id": 11,
+                "env": "sandbox",
+                "system": "nvinfo",
+                "model": "mixtral_agent"
+              }
+            }
+          },
+          "judge_config": {
+            "prompt_module": "eval_prompt_library.metrics_eval_prompt.MetricsEvaluationPrompt",
+            "output_format": "output_format",
+            "template": "eval_template_required_citations",
+            "scorers": [
+              "Correctness Answer",
+              "Helpfulness"
+            ],
+            "parse_keys": [
+              "Explanation"
+            ]
+          }
+        },
+        {
+          "name": "llm_evaluation",
+          "column_map": {
+            "question": "Query",
+            "reference": "Correct Answer",
+            "answer": "Response",
+            "category": "Source",
+            "additional_params": [
+              "Correct Answer",
+              "Required Citations"
+            ]
+          },
+          "model": {
+            "llm_name": "llama-3.1-70b"
+          },
+          "evaluator_payload": {
+            "eval_type": "llm_as_a_judge",
+            "eval_subtype": "mtbench",
+            "mode": "single",
+            "judge_inference_params": {
+              "top_p": 0.1,
+              "top_k": 40,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 600
+            },
+            "inference_params": {
+              "tokens_to_generate": 600,
+              "temperature": 0,
+              "top_k": 1,
+              "top_p": 0.75,
+              "stop": [],
+              "extra_body": {
+                "project_id": 11,
+                "env": "sandbox",
+                "system": "nvinfo",
+                "model": "mixtral_agent"
+              }
+            }
+          },
+          "judge_config": {
+            "prompt_module": "eval_prompt_library.metrics_eval_prompt.MetricsEvaluationPrompt",
+            "output_format": "output_format",
+            "template": "eval_template_required_citations",
+            "scorers": [
+              "Correctness Answer",
+              "Helpfulness"
+            ],
+            "parse_keys": [
+              "Explanation"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "RegressionSchema": {
+    "DatasetConfig": {
+      "Engine": "s3",
+      "DatasetFolder": "nvinfo_mixtral_agent",
+      "Name": "nvinfo_mixtral_agent",
+      "DatasetPath": "dataset/nvinfo_ground_truth_oct15.xlsx"
+    },
+    "DataConfigs": {
+      "column_map": {
+        "question": "Query",
+        "reference": "Correct Answer",
+        "category": "Source",
+        "additional_params": [
+          "Required Citations"
+        ],
+        "scorers": [
+          "Correctness Answer",
+          "Helpfulness"
+        ]
+      }
+    },
+    "RunConfig": {
+      "Inputs": [
+        {
+          "name": "",
+          "type": "Attribute",
+          "value": ""
+        },
+        {
+          "name": "",
+          "type": "Function",
+          "value": "service_library.run.parser_library.input_parser.generate_orchestrator_fulfillment_request",
+          "args": [
+            "Query"
+          ]
+        }
+      ],
+      "Outputs": [
+        {
+          "name": "Response",
+          "type": "Attribute",
+          "value": ""
+        },
+        {
+          "name": "Debug response",
+          "type": "Attribute",
+          "value": "-1.-1.debug_logger.-1"
+        },
+        {
+          "type": "Function",
+          "value": "service_library.run.parser_library.response_parser.decompose_stringify_json_data",
+          "args": [
+            "Debug response"
+          ]
+        },
+        {
+          "type": "Function",
+          "value": "service_library.run.parser_library.response_parser.get_nvinfo_orchestrator_streaming_answer_response",
+          "args": [
+            "Response"
+          ]
+        }
+      ]
+    }
+  }
+}

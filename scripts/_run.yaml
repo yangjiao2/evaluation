@@ -1,0 +1,95 @@
+apiVersion: argoproj.io/v1alpha1
+kind: CronWorkflow
+metadata:
+  name: eval-run
+  namespace: nemo-evaluation
+  labels:
+    example: 'true'
+spec:
+  workflowMetadata:
+    labels:
+      example: 'true'
+  schedule: '0 */6 * * *'
+  workflowSpec:
+    entrypoint: main-workflow
+    arguments:
+      parameters:
+        - name: base_url
+          value: http://nvbot-evaluation-service-dev.ns-nvbot-evaluation-dev.svc.cluster.local:5000/evaluation
+    templates:
+      - name: nvhelp-eval
+        inputs:
+          parameters:
+            - name: base_url
+              value: '{{workflow.parameters.base_url}}'
+        outputs: {}
+        metadata: {}
+        container:
+          name: main
+          image: curlimages/curl
+          command:
+            - curl
+          args:
+            - '-X'
+            - 'POST'
+            - 'http://nvbot-evaluation-service-dev.ns-nvbot-evaluation-dev.svc.cluster.local:5000/evaluation/eval_run'
+            - '-H'
+            - 'accept: application/json'
+            - '-H'
+            - 'Content-Type: application/json'
+            - '-d'
+            - >
+              {
+                "Project": "eval_nvbot_for_nvhelp_mixtral_agent_prd",
+                "RunType": "cron",
+                "System": "nvhelp",
+                "Model": "mixtral_agent",
+                "Attachments": [],
+                "UserId": "nvbot_evaluation"
+              }
+          resources: {}
+
+      - name: nvhelp-eval-prd
+        inputs:
+          parameters:
+            - name: base_url
+              value: '{{workflow.parameters.base_url}}'
+        outputs: {}
+        metadata: {}
+        container:
+          name: secondary
+          image: curlimages/curl
+          command:
+            - curl
+          args:
+            - '-X'
+            - 'POST'
+            - 'http://nvbot-evaluation-service-dev.ns-nvbot-evaluation-dev.svc.cluster.local:5000/evaluation/eval_run'
+            - '-H'
+            - 'accept: application/json'
+            - '-H'
+            - 'Content-Type: application/json'
+            - '-d'
+            - >
+              {
+                "Project": "eval_nvbot_for_nvhelp_secondary_agent_prd",
+                "RunType": "manual",
+                "System": "nvhelp",
+                "Model": "secondary_agent",
+                "Attachments": [],
+                "UserId": "nvbot_secondary"
+              }
+          resources: {}
+
+      - name: main-workflow
+        dag:
+          tasks:
+            - name: run-nvhelp-eval
+              template: nvhelp-eval
+            - name: run-nvhelp-eval-prd
+              template: nvhelp-eval-prd
+
+    ttlStrategy:
+      secondsAfterCompletion: 300
+    podGC:
+      strategy: OnPodCompletion

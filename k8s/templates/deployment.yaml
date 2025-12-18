@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "app.name" . }}-{{ .Values.env }}
+  namespace: {{ .Values.namespace }}-{{ .Values.env }}
+  labels:
+  {{- include "app.labels" . | nindent 4 }}
+  {{- include "datadog.labels" . | nindent 4}}
+spec:
+  {{- if not .Values.ingress.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{ end }}
+  selector:
+    matchLabels:
+      app: {{ include "app.name" . }}
+      env: {{ .Values.env }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "app.name" . }}
+        env: {{ .Values.env }}
+      {{- include "app.selectorLabels" . | nindent 8 }}
+      {{- include "datadog.labels" . | nindent 8}}
+      annotations:
+        admission.datadoghq.com/python-lib.version: {{ .Values.datadogVersion | quote}}
+    spec:
+      containers:
+        - image: {{ .Values.image.name }}:{{ .Values.image.tag }}
+          name: {{ .Values.containerName }}
+          envFrom:
+            - secretRef:
+                name: {{ include "app.name" . }}-secret-{{ .Values.env }}
+            - configMapRef:
+                name: {{ include "app.name" . }}-configmap-{{ .Values.env }}
+          {{- if .Values.containerPort.exists }}
+          ports:
+            {{- toYaml .Values.containerPort.ports | nindent 10 }}
+            {{ end }}
+          {{- if .Values.livenessProbe }}
+          startupProbe:
+            httpGet:
+              path: {{ .Values.healthCheck }}
+              port: http
+            failureThreshold: 30         
+            periodSeconds: 60
+          readinessProbe:
+            httpGet:
+              path: {{ .Values.healthCheck }}
+              port: http
+          
+          {{ end }}
+          resources: {{- toYaml .Values.deployment.resources | nindent 12 }}
+      imagePullSecrets:
+      - name: {{ include "app.name" . }}-creds-{{ .Values.env }}

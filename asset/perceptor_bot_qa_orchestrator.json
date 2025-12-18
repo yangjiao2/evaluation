@@ -1,0 +1,75 @@
+{
+    "EvaluationSchema": {
+        "Notification": {
+            "EmailRecipients": [
+                "tleach@nvidia.com",
+                "cmackay@nvidia.com",
+                "yangj@nvidia.com"
+            ]
+        },
+        "NemoEvaluator": {
+            "Evaluators": [
+                {
+                    "name": "llm_evaluation",
+                    "model": {
+                        "llm_name": "mistralai/mixtral-8x22b-instruct-v0.1"
+                    },
+                    "evaluator_payload": {
+                        "eval_type": "llm_as_a_judge",
+                        "eval_subtype": "mtbench",
+                        "mode": "single",
+                        "judge_inference_params": {
+                            "top_p": 0.1,
+                            "top_k": 40,
+                            "temperature": 0,
+                            "stop": [],
+                            "tokens_to_generate": 250
+                        },
+                        "inference_params": {
+                            "tokens_to_generate": 600,
+                            "temperature": 0,
+                            "top_k": 1,
+                            "top_p": 0.75,
+                            "stop": [],
+                            "extra_body": {
+                                "project_id": 13,
+                                "env": "sandbox",
+                                "system": "orchestrator_perceptor",
+                                "model": "mixtral_agent"
+                            }
+                        }
+                    },
+                    "judge_config": {
+                        "prompt_module": "eval_prompt_library.metrics_eval_prompt.MetricsEvaluationPrompt",
+                        "output_format": "output_format",
+                        "template": "eval_template",
+                        "scorers": [
+                            "Correctness Answer"
+                        ],
+                        "parse_keys": [
+                            "Explanation"
+                        ]
+                    }
+                }
+            ],
+            "DatasetConfig": {
+                "Engine": "datastore",
+                "DataLimit": null,
+                "Name": "perceptor_evaluation_qa-llm_as_a_judge-0801-0020-v7r",
+                "ResultFolder": null,
+                "DatasetPath": null,
+                "RunFile": null,
+                "DatasetId": "dataset-2DaZKpCaZ6NrrcAmBKEHDo",
+                "Files": [
+                    "dataset.xlsx",
+                    "judge_prompt_parameters/correct_answer.jsonl",
+                    "judge_prompts.jsonl",
+                    "question.jsonl",
+                    "reference_answer/reference.jsonl"
+                ],
+                "DatasetFolder": "perceptor_evaluation_qa-llm_as_a_judge-0801-0020-v7r"
+            }
+        },
+        "CustomEvaluator": null
+    }
+}

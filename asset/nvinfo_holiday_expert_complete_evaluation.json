@@ -1,0 +1,165 @@
+{
+  "EvaluationSchema": {
+    "Notification": {
+      "EmailRecipients": [
+        "yangj@nvidia.com"
+      ]
+    },
+    "NemoEvaluator": {
+      "DatasetConfig": {
+        "Engine": "local"
+      },
+      "Evaluators": [
+        {
+          "name": "custom_evaluation",
+          "column_map": {
+            "question": "Query",
+            "reference": "Correct Answer",
+            "answer": "Response"
+          },
+          "model": {
+            "llm_name": "mixtral-8x22b"
+          },
+          "evaluator_payload": {
+            "eval_type": "automatic",
+            "eval_subtype": "custom_eval",
+            "input_file": "",
+            "inference_configs": [
+              {
+                "run_inference": false,
+                "inference_params": {
+                  "tokens_to_generate": 600,
+                  "temperature": 0,
+                  "top_k": 1
+                }
+              }
+            ],
+            "num_of_samples": -1,
+            "scorers": [
+              "accuracy",
+              "bleu",
+              "rouge",
+              "em",
+              "f1",
+              "bert"
+            ]
+          }
+        },
+        {
+          "name": "llm_evaluation",
+          "column_map": {
+            "question": "Query",
+            "reference": "Correct Answer",
+            "answer": "Response",
+            "category": "Category",
+            "additional_params": [
+              "Correct Answer",
+              "Required Citations",
+              "Helpfulness Criteria",
+              "Empathy Expected",
+              "Short Answer Expected"
+            ]
+          },
+          "model": {
+            "llm_name": "mixtral-8x22b"
+          },
+          "evaluator_payload": {
+            "eval_type": "llm_as_a_judge",
+            "eval_subtype": "mtbench",
+            "mode": "single",
+            "judge_inference_params": {
+              "top_p": 0.1,
+              "top_k": 40,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 600
+            },
+            "inference_params": {
+              "top_p": 0.75,
+              "top_k": 0,
+              "temperature": 0,
+              "stop": [],
+              "tokens_to_generate": 25,
+              "extra_body": {
+                "project_id": 1,
+                "env": "stg"
+              }
+            }
+          },
+          "judge_config": {
+            "prompt_module": "eval_prompt_library.metrics_eval_prompt.MetricsEvaluationPrompt",
+            "output_format": "output_format",
+            "template": "eval_template_v2",
+            "scorers": [
+              "Correctness Answer",
+              "Helpfulness",
+              "Empathy",
+              "Conciseness"
+            ],
+            "parse_keys": [
+              "Explanation"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "RegressionSchema": {
+    "DatasetConfig": {
+      "Engine": "local",
+      "RunFile": "holiday.xlsx",
+      "DataLimit": 2
+    },
+    "RunConfig": {
+      "Inputs": [
+        {
+          "name": "",
+          "type": "Attribute",
+          "value": ""
+        },
+        {
+          "name": "",
+          "type": "Function",
+          "value": "service_library.run.parser_library.input_parser.generate_fulfillment_request",
+          "args": [
+            "Query",
+            "Category"
+          ]
+        }
+      ],
+      "Outputs": [
+        {
+          "name": "Response",
+          "type": "Attribute",
+          "value": "Response.Json.Text.text"
+        },
+        {
+          "name": "AgentAction",
+          "type": "Attribute",
+          "value": "Response.CleanedText"
+        },
+        {
+          "name": "IRResults",
+          "type": "Attribute",
+          "value": "CustomData.IRResults"
+        },
+        {
+          "name": "Tool",
+          "type": "Function",
+          "value": "service_library.run.parser_library.response_parser.extract_tool",
+          "args": [
+            "AgentAction"
+          ]
+        },
+        {
+          "name": "Tool Input",
+          "type": "Function",
+          "value": "service_library.run.parser_library.response_parser.extract_tool_input",
+          "args": [
+            "AgentAction"
+          ]
+        }
+      ]
+    }
+  }
+}

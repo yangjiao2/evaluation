@@ -1,0 +1,119 @@
+agent:
+  model:
+    - azure_gpt-4_chat
+    - azure_gpt-4-32k_chat
+  type: conversational-react-description
+
+opendomain:
+  model:
+    - azure_gpt-4_chat
+    - azure_gpt-4-32k_chat
+
+redis:
+  path: nvbot/kv/data/redis
+
+email:
+  from_email: nvbot@nvidia.com
+  path: nvbot/kv/data/sendgrid
+
+aws:
+  path: nvbot/kv/data/evaluate-metrics
+
+helios:
+  path: nvbot/kv/data/helios
+  base_url: https://helios-api.nvidia.com/api/v1
+  users_filter_url: users?filter[login]={}&filter[active]=1
+  user_search_url: users?search={}&page[size]={}&page[number]={}&filter[active]=1&filter[employeeIDPresent]=1
+  user_group_check: users?filter[ancestorGroupName]={}&filter[login]={}
+  users_groups: groups?filter[descendantUserLogin]={}
+
+mulesoft:
+  path: nvbot/kv/data/mulesoft/{}
+
+llm_gateway:
+  path: nvbot/kv/data/llm-gateway
+
+llm_gateway_prd:
+  path: nvbot/kv/data/llm-gateway-prd
+
+llm_list_prd:
+  path: nvbot/kv/data/llm-list-prd
+
+llm_list:
+  path: nvbot/kv/data/llm-list
+
+svc_jarvis:
+  path: nvbot/kv/data/service-accounts/svc_jarvis
+
+unsupported_response:
+  text:
+    "I'm sorry. I couldn't find an answer to your question. Presently, I'm trained to help with
+    ITHelp related questions, employee information, company holidays, on-call information,
+    NVBugs and JIRA. For a complete list of my features look [here]"
+  value:
+    - name: here
+      description: here
+      link: https://confluence.nvidia.com/pages/viewpage.action?pageId=1237323673
+
+nvboturls:
+  path: nvbot/kv/data/nvbot-urls/{}
+
+openai:
+  path: nvbot/kv/data/openai
+
+cache_answer_time: 300 # Time the answer needs to be in cache for streaming responses in seconds
+
+nvbotalloweddls:
+  dev:
+    - NVBot-Core-Team
+  stg:
+    - NVBot Early Access
+  sandbox:
+    - NVBot-Core-Team
+  prd:
+    - NVBot-Core-Team
+
+starfleet:
+  urls: nvbot/kv/data/starfleet-urls
+  ssa_path: nvidia/services/ssa/clients/{}/kv/data/secret
+  clients: nvbot/kv/data/ssa/client-ids/{}
+
+hidedetailstatus:
+  GPT-4: false
+  llama-2-70b-chat-hf: false
+  gpt-43b-905: false
+  mixtral: true
+  mixtral_agent: true
+
+# e5_emb:
+#   path: nvbot/kv/data/e5-emb-urls
+  
+# temp_tag:
+#   path: nvbot/kv/data/scout-temp-urls
+
+# sales_collection_list:
+#   dev:
+#     - email_chunk
+#   stg:
+#     - email_chunk
+#   sandbox:
+#     - email_chunk
+#   prd:
+#     - email_chunk
+
+
+nvcf_keys:
+  path: nvbot/kv/data/nvcf_keys
+
+stg_nvcf_api_key:
+  path: nvbot/kv/data/stg_nvcf_api_key
+
+datadog:
+  path: nvbot/kv/data/evaluator/datadog
+
+auth:
+  path: nvbot/kv/data/evaluator/starfleet
+
+
+nvbugs:
+  path: nvbot/kv/data/nvbugs-secrets/t2yb

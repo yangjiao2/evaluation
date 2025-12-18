@@ -1,0 +1,18 @@
+{{- if .Values.service.exists }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "app.name" . }}-service-{{ .Values.env }}
+  namespace: {{ .Values.namespace }}-{{ .Values.env }}
+  labels:
+    app: {{ include "app.name" . }}
+    env: {{ .Values.env }}
+  {{- include "app.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  selector:
+    app: {{ include "app.name" . }}
+  {{- include "app.selectorLabels" . | nindent 4 }}
+  ports:
+	{{- .Values.service.ports | toYaml | nindent 2 -}}
+  {{ end }}
